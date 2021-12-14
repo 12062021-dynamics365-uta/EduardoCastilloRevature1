@@ -1,0 +1,16 @@
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\bin\Debug\net5.0\Rock-Paper-Scissors-Demo1.exe
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\bin\Debug\net5.0\Rock-Paper-Scissors-Demo1.deps.json
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\bin\Debug\net5.0\Rock-Paper-Scissors-Demo1.runtimeconfig.json
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\bin\Debug\net5.0\Rock-Paper-Scissors-Demo1.runtimeconfig.dev.json
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\bin\Debug\net5.0\Rock-Paper-Scissors-Demo1.dll
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\bin\Debug\net5.0\ref\Rock-Paper-Scissors-Demo1.dll
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\bin\Debug\net5.0\Rock-Paper-Scissors-Demo1.pdb
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.csproj.AssemblyReference.cache
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.AssemblyInfoInputs.cache
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.AssemblyInfo.cs
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.csproj.CoreCompileInputs.cache
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.dll
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\ref\Rock-Paper-Scissors-Demo1.dll
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.pdb
+D:\Mis documentos\Revature\12062021-batch-repo-main\demos\New folder\Rock-Paper-Scissors-Demo1\obj\Debug\net5.0\Rock-Paper-Scissors-Demo1.genruntimeconfig.cache
