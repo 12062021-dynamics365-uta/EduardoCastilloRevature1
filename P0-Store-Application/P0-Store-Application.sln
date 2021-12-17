@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "..\Client\Client.csproj", "{B5BC69A3-740E-4935-B67D-18B8E9C2EC77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\Domain\Domain.csproj", "{8D0FA431-09C7-46F5-A484-FE713E2783F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "..\Storage\Storage.csproj", "{5CE104FA-C53D-412B-88AD-12C41B3B61D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5BC69A3-740E-4935-B67D-18B8E9C2EC77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BC69A3-740E-4935-B67D-18B8E9C2EC77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BC69A3-740E-4935-B67D-18B8E9C2EC77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BC69A3-740E-4935-B67D-18B8E9C2EC77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0FA431-09C7-46F5-A484-FE713E2783F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0FA431-09C7-46F5-A484-FE713E2783F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0FA431-09C7-46F5-A484-FE713E2783F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0FA431-09C7-46F5-A484-FE713E2783F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE104FA-C53D-412B-88AD-12C41B3B61D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE104FA-C53D-412B-88AD-12C41B3B61D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE104FA-C53D-412B-88AD-12C41B3B61D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE104FA-C53D-412B-88AD-12C41B3B61D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB931CE4-5A5B-49E4-83CC-1511D9C42313}
+	EndGlobalSection
+EndGlobal

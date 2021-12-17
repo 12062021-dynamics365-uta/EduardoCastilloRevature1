@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f3adf821-129d-41fc-a40d-2e74662870b0": {
+      "ProjectGuid": "f3adf821-129d-41fc-a40d-2e74662870b0",
+      "DisplayName": "P0-Store-Application",
+      "ColorIndex": 0
+    },
+    "b5bc69a3-740e-4935-b67d-18b8e9c2ec77": {
+      "ProjectGuid": "b5bc69a3-740e-4935-b67d-18b8e9c2ec77",
+      "DisplayName": "Client",
+      "ColorIndex": 1
+    },
+    "8d0fa431-09c7-46f5-a484-fe713e2783f2": {
+      "ProjectGuid": "8d0fa431-09c7-46f5-a484-fe713e2783f2",
+      "DisplayName": "Domain",
+      "ColorIndex": 2
+    },
+    "5ce104fa-c53d-412b-88ad-12c41b3b61d2": {
+      "ProjectGuid": "5ce104fa-c53d-412b-88ad-12c41b3b61d2",
+      "DisplayName": "Storage",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
