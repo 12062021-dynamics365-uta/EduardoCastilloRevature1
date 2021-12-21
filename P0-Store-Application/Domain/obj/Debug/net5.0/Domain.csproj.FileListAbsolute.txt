@@ -1,0 +1,15 @@
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\bin\Debug\net5.0\Domain.deps.json
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\bin\Debug\net5.0\Domain.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\bin\Debug\net5.0\ref\Domain.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\bin\Debug\net5.0\Domain.pdb
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\bin\Debug\net5.0\Storage.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\bin\Debug\net5.0\Storage.pdb
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.csproj.CopyComplete
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\ref\Domain.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Domain\obj\Debug\net5.0\Domain.pdb

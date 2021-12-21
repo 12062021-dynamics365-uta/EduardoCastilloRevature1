@@ -1,0 +1,12 @@
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\bin\Debug\net5.0\Storage.deps.json
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\bin\Debug\net5.0\Storage.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\bin\Debug\net5.0\ref\Storage.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\bin\Debug\net5.0\Storage.pdb
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\Storage.csproj.AssemblyReference.cache
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\Storage.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\Storage.AssemblyInfoInputs.cache
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\Storage.AssemblyInfo.cs
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\Storage.csproj.CoreCompileInputs.cache
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\Storage.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\ref\Storage.dll
+D:\Revature\Projects\EduardoCastilloRevature1\P0-Store-Application\Storage\obj\Debug\net5.0\Storage.pdb
