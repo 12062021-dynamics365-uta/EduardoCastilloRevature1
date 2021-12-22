@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "niyHvNFTUXjAMCZVDmJGKeBZsUThHytQ5x6TAdWb4NgxAUsgtWzLf7DATuT1DfPVgABv296Drt8xqP3HEh6lQQ==",
+  "dgSpecHash": "KRpiX6QlPsGfNXjAgaSI6AWsmguaD8kTalh7dgCwSvj57VoLATfzZkrnnhihDMY7TFPK9bwI2lx5EYqrgmD+CA==",
   "success": true,
-  "projectFilePath": "D:\\Revature\\Projects\\EduardoCastilloRevature1\\P0-Store-Application\\Client\\Client.csproj",
+  "projectFilePath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Client\\Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eduard\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Eduard\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -38,5 +38,11 @@ namespace Storage
             return fullName;
         }
 
+        public void CustomerPurchases()
+        {
+            //parameters customerID
+            //   return List of past purchsases of that customer
+        }
+
     }
 }

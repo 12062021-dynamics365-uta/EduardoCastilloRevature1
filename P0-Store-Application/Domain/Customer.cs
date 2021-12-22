@@ -43,7 +43,7 @@ namespace Domain
 
         public void ViewPastPurchases()
         {
-
+            //call CustomerPurchases drom dataAccess
         }
 
         public void ViewAvailableStores()

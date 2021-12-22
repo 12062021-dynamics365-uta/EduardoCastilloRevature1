@@ -478,11 +478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Revature\\Projects\\EduardoCastilloRevature1\\P0-Store-Application\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\Revature\\Projects\\EduardoCastilloRevature1\\P0-Store-Application\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Eduard\\.nuget\\packages\\",
-      "outputPath": "D:\\Revature\\Projects\\EduardoCastilloRevature1\\P0-Store-Application\\Domain\\obj\\",
+      "outputPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -503,8 +503,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Revature\\Projects\\EduardoCastilloRevature1\\P0-Store-Application\\Storage\\Storage.csproj": {
-              "projectPath": "D:\\Revature\\Projects\\EduardoCastilloRevature1\\P0-Store-Application\\Storage\\Storage.csproj"
+            "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Storage\\Storage.csproj": {
+              "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Storage\\Storage.csproj"
             }
           }
         }
