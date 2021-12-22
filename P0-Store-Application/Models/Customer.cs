@@ -13,7 +13,7 @@ using System.Threading.Tasks;
    must be able to cancel a purchase
  */
 
-namespace Domain
+namespace Models
 {
     public class Customer
     {

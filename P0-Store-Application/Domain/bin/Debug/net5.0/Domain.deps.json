@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Domain/1.0.0": {
         "dependencies": {
+          "Models": "1.0.0",
           "Storage": "1.0.0"
         },
         "runtime": {
@@ -89,8 +90,14 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
+        }
+      },
       "Storage/1.0.0": {
         "dependencies": {
+          "Models": "1.0.0",
           "System.Data.SqlClient": "4.8.3"
         },
         "runtime": {
@@ -167,6 +174,11 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Storage/1.0.0": {
       "type": "project",

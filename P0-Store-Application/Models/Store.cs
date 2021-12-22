@@ -10,11 +10,10 @@ using System.Threading.Tasks;
    [stretch goal] must be able to manage product inventory (add, edit, delete any product)
 */
 
-namespace Domain
+namespace Models
 {
     internal class Store
     {
-
         public void PastSales()
         {
 

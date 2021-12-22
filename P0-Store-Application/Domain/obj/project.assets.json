@@ -131,10 +131,21 @@
           }
         }
       },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      },
       "Storage/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Models": "1.0.0",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -460,6 +471,11 @@
         "version.txt"
       ]
     },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    },
     "Storage/1.0.0": {
       "type": "project",
       "path": "../Storage/Storage.csproj",
@@ -468,6 +484,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Models >= 1.0.0",
       "Storage >= 1.0.0"
     ]
   },
@@ -503,6 +520,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Models\\Models.csproj": {
+              "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Models\\Models.csproj"
+            },
             "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Storage\\Storage.csproj": {
               "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Storage\\Storage.csproj"
             }

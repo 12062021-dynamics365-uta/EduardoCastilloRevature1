@@ -1,5 +1,6 @@
 ﻿using System;
 using Domain;
+using Models;
 
 namespace Client
 {
@@ -19,6 +20,7 @@ namespace Client
                 Console.WriteLine("Press 1 for new Customer or 2 for sing in");
                 input = Console.ReadLine();
             } while ((input != "1") && (input != "2"));
+
 
             Console.WriteLine("Enter name");
             string customerName = Console.ReadLine();

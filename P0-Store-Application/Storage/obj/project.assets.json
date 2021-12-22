@@ -130,6 +130,16 @@
             "rid": "win"
           }
         }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
       }
     }
   },
@@ -446,10 +456,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Models >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3"
     ]
   },
@@ -484,7 +500,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Models\\Models.csproj": {
+              "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Models\\Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

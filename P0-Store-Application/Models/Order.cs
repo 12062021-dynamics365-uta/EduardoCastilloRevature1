@@ -11,7 +11,7 @@ using System.Threading.Tasks;
    must be able to limit its total cost to no more than $500
 */
 
-namespace Domain
+namespace Models
 {
     internal class Order
     {
