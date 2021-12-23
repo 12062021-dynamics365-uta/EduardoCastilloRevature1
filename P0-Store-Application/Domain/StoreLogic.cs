@@ -11,27 +11,55 @@ namespace Domain
     public class StoreLogic
     {
         DataAccess access;
+        List<Product> shoppingCart;
+
+        public List<Product> ShoppingCart
+        {
+            get { return shoppingCart; }
+        }
+
 
         public StoreLogic()
         {
             access = new DataAccess();
-
-
-
-
-
+            shoppingCart = new List<Product>();
 
         }
 
-        public Customer SignIn(string name, string lastName)
+
+
+
+
+
+
+        // Customer actions ****************************************************
+        public Customer SignIn(Customer customer)
         {
-            string[] fullName = access.FindCustomer(name, lastName);
-            return new Customer(fullName[0], fullName[1]);
+            return customer;
+        }
+        public void SignUp(Customer customer)
+        {
+            access.AddCustomer(customer);
+        }
+        public List<Purchases> ViewPastPurchases(Customer c)
+        {
+            return access.CustomerPurchases(c.CustomerID);
+        }      
+
+        public void MakePurchase()
+        {
+
         }
 
-        public void SignUp(string name, string lastName)
+        public void CancelPurchase()
         {
-            access.AddCustomer(name, lastName);
+
+        }
+
+        //Methods
+        public void AddProduct(Product product)
+        {
+            ShoppingCart.Add(product);
         }
     }
 }

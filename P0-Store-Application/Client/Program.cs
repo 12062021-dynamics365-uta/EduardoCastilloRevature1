@@ -21,29 +21,29 @@ namespace Client
                 input = Console.ReadLine();
             } while ((input != "1") && (input != "2"));
 
-
+            Customer customer = new Customer();
             Console.WriteLine("Enter name");
-            string customerName = Console.ReadLine();
+            customer.Name = Console.ReadLine();
             Console.WriteLine("Enter last name");
-            string customerLastName = Console.ReadLine();
+            customer.LastName = Console.ReadLine();
 
             if (input == "1")
             {
-                Customer c = SL.SignIn(customerName, customerLastName);
+                Customer c = SL.SignIn(customer);
                 if (c != null)
                 {
-                    SL.SignUp(customerName, customerLastName);
-                    Console.WriteLine("Hello " + customerName + ", enter a store number to see available products.");
+                    SL.SignUp(customer);
+                    Console.WriteLine("Hello " + customer.Name + ", enter a store number to see available products.");
                 }
                 else
                 {
-                    Console.WriteLine("Hello " + customerName + ", welcome back! \nEnter a store number to see available products.");
+                    Console.WriteLine("Hello " + customer.Name + ", welcome back! \nEnter a store number to see available products.");
                 }
             }
             else
             {
-                SL.SignIn(customerName, customerLastName);
-                Console.WriteLine("Hello " + customerName + ", welcome back! \nEnter a store number to see available products.");
+                SL.SignIn(customer);
+                Console.WriteLine("Hello " + customer.Name + ", welcome back! \nEnter a store number to see available products.");
 
             }
         }//EndMain

@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- * must be able to view past purchases
-   must be able to view available store locations
+ * 
+   
    must be able to purchase 1 or more products
    must be able to view current cart
    must be able to checkout
@@ -16,18 +16,34 @@ using System.Threading.Tasks;
 namespace Models
 {
     public class Customer
-    {
-        List<Product> shoppingCart;
+    {       
+        int customerID;
         string name;
         string lastName;
 
+        //Properties ************************
+        public int CustomerID
+        {
+            get { return customerID; }
+            set { customerID = value; }
+        }
         public string Name
         {
             get { return name; }
+            set { name = value; }
         }
         public string LastName
         {
             get { return lastName; }
+            set { lastName = value; }
+        }        
+
+
+
+        //Constructors ***********************
+        public Customer()
+        {
+             
         }
 
         public Customer(string Name, string LastName)
@@ -36,34 +52,5 @@ namespace Models
             lastName = LastName;
         }
 
-        public List<Product> ShoppingCart
-        {
-            get { return shoppingCart; }
-        }
-
-        public void ViewPastPurchases()
-        {
-            //call CustomerPurchases drom dataAccess
-        }
-
-        public void ViewAvailableStores()
-        {
-
-        }
-
-        public void MakePurchase()
-        {
-
-        }
-
-        public void CancelPurchase()
-        {
-
-        }
-
-        public void AddProduct(Product product)
-        {
-            ShoppingCart.Add(product);
-        }
     }
 }
