@@ -42,7 +42,24 @@ namespace Storage
                 customer.Name = dr[1].ToString();
                 customer.LastName = dr[2].ToString();
             }
+            con.Close();
             return customer;
+        }
+        public Customer FindCustomer(int id)
+        {
+            Customer c = null;
+            string sql = $"SELECT * FROM Customers WHERE CustomerID = {id};";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                c.CustomerID = id;
+                c.Name = dr[1].ToString();
+                c.LastName = dr[2].ToString();
+            }
+            con.Close();
+            return c;
         }
 
         public List<Purchases> CustomerPurchases(int customerID)
@@ -102,8 +119,156 @@ namespace Storage
             {
                 id = (int)dr[0];
             }
+            con.Close();
             return id;
         }
 
+        private double GetProductPrice(string productName)
+        {
+            double price = 0;
+            string sql = $"SELECT Price FROM Products WHERE ProductName = '{productName}';";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                price = (int)dr[0];
+            }
+            con.Close();
+            return price;
+        }
+
+        public void CancelPurchase(Purchases p)
+        {
+            double price = GetProductPrice(p.ProductName);
+            string sql = $"UPDATE Orders SET Total = Total - {price} WHERE OrderID = {p.OrderID};";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            string sql2 = $"DELETE FROM Purchases WHERE PurchasesID = {p.PurchasesID};";
+            con.Open();
+            SqlCommand cmd2 = new SqlCommand(sql2, con);
+            cmd2.ExecuteNonQuery();
+            con.Close();
+        }
+
+
+
+        // Store ****************************************************
+        public List<Order> PastOrders(Store s)
+        {
+            string sql = $"SELECT * FROM Orders WHERE StoreName = '{s.StoreName}';";
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            List<Order> orders = new List<Order>();
+            while(dr.Read())
+            {
+                Customer customer = FindCustomer((int)dr[1]);
+                Store store = FindStore(dr[2].ToString());
+                Order order = new Order( (int)dr[0], customer, store, (DateTime)dr[3], (double)dr[4]); 
+                orders.Add(order);
+            }
+            return orders;
+        }
+
+        public List<Purchases> PastPurchases(Store s)
+        {
+            string sql = $"SELECT Purchases.PurchasesID, Purchases.ProductName, Purchases.OrderID FROM Purchases INNER JOIN Orders ON" +
+                $" Purchases.OrderID = Orders.OrderID AND Orders.StoreName = '{s.StoreName}';";
+
+            List<Purchases> purchases = new List<Purchases>();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Purchases purchu = new Purchases()
+                {
+                    PurchasesID = (int)dr[0],
+                    ProductName = dr[1].ToString(),
+                    OrderID = (int)dr[2],
+                    OrderedDate = (DateTime)dr[3],
+                    StoreName = dr[4].ToString()
+                };
+                purchases.Add(purchu);
+            }
+            return purchases;
+        }
+
+        private Store FindStore(string name)
+        {
+            Store store = null;
+            string sql = $"SELECT * FROM Stores WHERE StoreName = '{name}';";
+           
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                store = new Store(dr[0].ToString());
+            }
+            con.Close();
+            return store;
+        }
+
+        public List<Product> AvailableProducts(Store store)
+        {
+            List<Product> products = new List<Product>();      
+            string sql = $"SELECT Products.ProductName, Products.Price, Products.Description FROM Products INNER JOIN Inventory ON" +
+                $" Products.ProductName = Inventory.ProductName AND Inventory.StoreName = '{store.StoreName}';";
+
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Product product = new Product()
+                {
+                    Name = dr[0].ToString(),
+                    Price = (double)dr[1],
+                    Description = dr[2].ToString()
+
+                };
+                products.Add(product);
+            }
+            return products;
+        }
+
+        public void AddProduct(Product p)
+        {
+            string sql = $"INSERT INTO Products (ProductName, Price, Description) VALUES ('{p.Name}',{p.Price},'{p.Description}'; ";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public void DeleteProduct(Product p)
+        {
+            string sql = $"DELETE FROM Products WHERE ProductName = {p.Name};";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public void EditProduct(Product p, string description)
+        {
+            string sql = $"UPDATE Products SET Description = '{description}' WHERE ProductName = '{p.Name}';";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public void EditProduct(Product p, double price)
+        {
+            string sql = $"UPDATE Products SET Price = {price} WHERE ProductName = '{p.Name}';";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

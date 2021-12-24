@@ -44,7 +44,7 @@ namespace Models
 
 
 
-        //Constructor  **************************************
+        //Constructors  **************************************
        public Order(Customer c, Store s, List<Product> p)
        {
             customer = c;
@@ -52,6 +52,15 @@ namespace Models
             date = DateTime.Now;
             products = p;
             totalCost = GetTotalCost(p);
+        }
+      
+        public Order(int orderID, Customer c,Store s, DateTime orderedDate, double total)
+        {
+            id = orderID;
+            customer = c;
+            store=s;
+            date = orderedDate;
+            totalCost = total;
         }
 
 
@@ -66,5 +75,6 @@ namespace Models
             }
             return totalcost;
         }
+        
     }
 }

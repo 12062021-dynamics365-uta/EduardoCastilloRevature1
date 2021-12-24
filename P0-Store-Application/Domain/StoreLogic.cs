@@ -20,7 +20,6 @@ namespace Domain
             get { return shoppingCart; }
         }
 
-
         public StoreLogic()
         {
             access = new DataAccess();
@@ -49,7 +48,6 @@ namespace Domain
         {
             return access.CustomerPurchases(customer.CustomerID);
         }      
-
         public void MakePurchase(Order o)
         {
             int id = access.AddOrder(o);
@@ -58,8 +56,11 @@ namespace Domain
                 Purchases purchase = new Purchases(shoppingCart[i].Name, id);
                 access.AddPurchase(purchase);
             }           
-        }  
-        
+        }        
+        public void CancelPurchase(Purchases p)
+        {
+            access.CancelPurchase(p);
+        }      
         public object ReviewOrder()
         {
             try
@@ -82,11 +83,46 @@ namespace Domain
                 return ex;
             }
         }
-
-        public bool AddProduct(Product product)
+        public bool AddProductToCart(Product product)
         {
             ShoppingCart.Add(product);
             return true;
         }
+
+        // Store actions ****************************************************
+        public void PastSales()
+        {
+            access.PastOrders(store);
+        }
+
+        public List<Product> ViewAvailableProducts(Store s)
+        {
+            return access.AvailableProducts(s);
+        }
+
+        public List<Purchases> ViewPastStorePurchases()
+        {
+            return access.PastPurchases(store);
+        }
+
+        public void AddProduct(string name, double price, string description)
+        {
+            Product product = new Product(name,price,description);
+            access.AddProduct(product);
+        }
+        public void EditProductDescription(Product p, string newDescription)
+        {
+            access.EditProduct(p, newDescription);
+        }
+        public void EditProductPrice(Product p, double newPrice)
+        {
+            access.EditProduct(p, newPrice);
+        }
+        public void DeleteProduct(Product p)
+        {
+            access.DeleteProduct(p);
+        }
+
+        
     }
 }
