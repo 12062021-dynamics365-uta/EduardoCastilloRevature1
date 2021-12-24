@@ -16,7 +16,7 @@ namespace Models
         string storeName;
 
 
-
+        //Properties ************************
         public int PurchasesID
         {
             get { return purchasesID; } 
@@ -41,6 +41,19 @@ namespace Models
         {
             get { return storeName; }
             set { storeName = value; }
+        }
+
+
+        //Constructors ***********************
+        public Purchases(string product_name, int order_ID)
+        {
+            productName = product_name;
+            orderID = order_ID;
+        }
+
+        public Purchases()
+        {
+
         }
     }
 }

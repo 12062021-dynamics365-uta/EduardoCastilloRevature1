@@ -12,8 +12,18 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    internal class Store
+    public class Store
     {
+        string storeName;
+        public string StoreName
+        {
+            get { return storeName; }
+            set { storeName = value; }
+        }
+
+
+
+
         public void PastSales()
         {
 

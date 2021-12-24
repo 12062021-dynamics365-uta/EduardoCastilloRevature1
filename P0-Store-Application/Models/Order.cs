@@ -1,25 +1,70 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-/*
- * must be able to compute its total cost
-   must be able to contain at least 1 product
-   must be able to limit its content to no more than 50 items
-   must be able to limit its total cost to no more than $500
-*/
 
 namespace Models
 {
-    internal class Order
+    public class Order
     {
         List<Product> products;
 
-        public void GetTotalCost()
-        {
+        int id;
+        Customer customer;
+        Store store;
+        DateTime date;
+        double totalCost;
 
+
+         //Properties ************************
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        public Customer Customer
+        {
+            get { return customer; }
+        }
+        public Store Store
+        {
+            get { return store; }
+        }
+        public DateTime Date
+        {
+            get { return date; }
+        }
+        public double TotalCost
+        {
+            get { return totalCost; }
+        }
+        public List<Product> Products
+        {
+            get { return products; }
+        }
+
+
+
+        //Constructor  **************************************
+       public Order(Customer c, Store s, List<Product> p)
+       {
+            customer = c;
+            store = s;
+            date = DateTime.Now;
+            products = p;
+            totalCost = GetTotalCost(p);
+        }
+
+
+
+        //Methods  **********************************************
+        private double GetTotalCost(List<Product> prods)
+        {
+            double totalcost = 0;
+            for(int i = 0; i < prods.Count; i++)
+            {
+                totalcost += prods[i].Price;
+            }
+            return totalcost;
         }
     }
 }
