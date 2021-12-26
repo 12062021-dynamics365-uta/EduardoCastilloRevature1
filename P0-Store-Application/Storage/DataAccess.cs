@@ -21,7 +21,7 @@ namespace Storage
 
         public void AddCustomer(Customer c)
         {
-            string querystring = "INSERT INTO Customers (Name, LastName) VALUES ('" + c.Name + "', '" + c.LastName + "');";
+            string querystring = $"INSERT INTO Customers (Name, LastName, Password) VALUES ('{c.Name}', '{c.LastName}', '{c.Password}');";
             con.Open();
             SqlCommand cmd = new SqlCommand(querystring, con);
             cmd.ExecuteNonQuery();
@@ -38,13 +38,16 @@ namespace Storage
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
+                customer = new Customer();
                 customer.CustomerID = (int)dr[0];
                 customer.Name = dr[1].ToString();
                 customer.LastName = dr[2].ToString();
+                customer.Password = dr[3].ToString();
             }
             con.Close();
             return customer;
         }
+
         public Customer FindCustomer(int id)
         {
             Customer c = null;
@@ -57,6 +60,7 @@ namespace Storage
                 c.CustomerID = id;
                 c.Name = dr[1].ToString();
                 c.LastName = dr[2].ToString();
+                c.Password = dr[3].ToString();
             }
             con.Close();
             return c;

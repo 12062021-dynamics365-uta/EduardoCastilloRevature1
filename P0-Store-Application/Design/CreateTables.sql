@@ -5,6 +5,8 @@ CREATE TABLE Customers
    LastName VARCHAR(30)
 );
 
+ALTER TABLE Customers ADD Password VARCHAR(20);
+
 CREATE TABLE Stores
 (
    StoreName VARCHAR(30) NOT NULL PRIMARY KEY
@@ -39,3 +41,4 @@ CREATE TABLE Inventory
    ProductName VARCHAR(30) NOT NULL FOREIGN KEY REFERENCES Products(ProductName),
    StoreName VARCHAR(30) NOT NULL FOREIGN KEY REFERENCES Stores(StoreName)
 );
+

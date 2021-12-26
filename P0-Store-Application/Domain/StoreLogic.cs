@@ -34,15 +34,29 @@ namespace Domain
 
 
         // Customer actions ****************************************************
-        public Customer SignIn(Customer c)
+        public bool SignIn(Customer c, string password)
+        {
+            customer = access.FindCustomer(c);
+            if(customer == null)
+                return false;
+            else
+            {
+                if (customer.Password == password)
+                    return true;
+                else
+                    return false;
+            }           
+        }
+        public Customer FindCustomer(Customer c)
         {
             customer = access.FindCustomer(c);
             return customer;
         }
-        public void SignUp(Customer c)
+        public Customer SignUp(Customer c)
         {
             access.AddCustomer(c);
             customer = access.FindCustomer(c);
+            return customer;
         }
         public List<Purchases> ViewPastPurchases()
         {

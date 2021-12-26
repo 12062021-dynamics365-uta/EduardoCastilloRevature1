@@ -4,14 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 
-   
-   must be able to purchase 1 or more products
-   must be able to view current cart
-   must be able to checkout
-   must be able to cancel a purchase
- */
 
 namespace Models
 {
@@ -20,6 +12,7 @@ namespace Models
         int customerID;
         string name;
         string lastName;
+        string password;
 
         //Properties ************************
         public int CustomerID
@@ -37,7 +30,11 @@ namespace Models
             get { return lastName; }
             set { lastName = value; }
         }        
-
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
 
 
         //Constructors ***********************
@@ -46,10 +43,11 @@ namespace Models
              
         }
 
-        public Customer(string Name, string LastName)
+        public Customer(string Name, string LastName, string Password)
         {
             name = Name;
             lastName = LastName;
+            password = Password;
         }
 
     }
