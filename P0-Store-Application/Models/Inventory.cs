@@ -12,9 +12,22 @@ namespace Models
         string productName;
         string storeName;
 
-        public Inventory(int id,string ProductName, string StoreName)
+        public int InventoryID
         {
-            inventoryID = id;
+            get { return inventoryID; }
+            set { inventoryID = value; }
+        }
+        public string ProductName
+        {
+            get { return productName; }
+        }
+        public string StoreName
+        {
+            get { return storeName; }
+        }
+
+        public Inventory(string ProductName, string StoreName)
+        {
             productName = ProductName;
             storeName = StoreName;
         }

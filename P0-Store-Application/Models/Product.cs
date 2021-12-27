@@ -4,7 +4,7 @@
     {
         string name;
         string description;
-        double price;
+        decimal price;
 
         //Properties ************************
         public string Name
@@ -17,7 +17,7 @@
             get { return description; }
             set { description = value; }
         }
-        public double Price
+        public decimal Price
         {
             get { return price; }
             set { price = value; }
@@ -29,7 +29,7 @@
 
         }
 
-        public Product(string Name, double Price, string Description)
+        public Product(string Name, decimal Price, string Description)
         {
             name = Name;
             price = Price;

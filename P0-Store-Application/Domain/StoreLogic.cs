@@ -19,6 +19,11 @@ namespace Domain
         {
             get { return shoppingCart; }
         }
+        public Store Store
+        {
+            get { return store; }
+            set { store = value; }
+        }
 
         public StoreLogic()
         {
@@ -28,7 +33,13 @@ namespace Domain
         }
 
 
-
+        public bool ValidateAdm(string password)
+        {
+            if (password == "123")
+                return true;
+            else
+                return false;
+        }
 
 
 
@@ -103,10 +114,22 @@ namespace Domain
             return true;
         }
 
-        // Store actions ****************************************************
-        public void PastSales()
+        public Product FindProduct(string productName)
         {
-            access.PastOrders(store);
+            Product product = new Product();
+            product.Name = productName;
+            return access.FindProduct(product);
+        }
+
+        public List<Order> PastSales(Customer c)
+        {
+            return access.PastOrders(c);
+        }
+
+        // Store actions ****************************************************
+        public List<Order> PastSales(Store e)
+        {
+            return access.PastOrders(e);
         }
 
         public List<Product> ViewAvailableProducts(Store s)
@@ -114,15 +137,24 @@ namespace Domain
             return access.AvailableProducts(s);
         }
 
-        public List<Purchases> ViewPastStorePurchases()
+        public List<Product> ViewAvailableProducts()
         {
-            return access.PastPurchases(store);
+            return access.AvailableProducts();
         }
 
-        public void AddProduct(string name, double price, string description)
+        public List<Purchases> ViewPastStorePurchases(Store e)
+        {
+            return access.PastPurchases(e);
+        }
+
+        public void AddProduct(string name, decimal price, string description)
         {
             Product product = new Product(name,price,description);
             access.AddProduct(product);
+        }
+        public void AddInventory(Inventory y)
+        {
+            access.AddInventory(y);
         }
         public void EditProductDescription(Product p, string newDescription)
         {

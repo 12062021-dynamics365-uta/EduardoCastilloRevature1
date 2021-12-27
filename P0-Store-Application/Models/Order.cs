@@ -12,7 +12,7 @@ namespace Models
         Customer customer;
         Store store;
         DateTime date;
-        double totalCost;
+        decimal totalCost;
 
 
          //Properties ************************
@@ -33,7 +33,7 @@ namespace Models
         {
             get { return date; }
         }
-        public double TotalCost
+        public decimal TotalCost
         {
             get { return totalCost; }
         }
@@ -54,7 +54,7 @@ namespace Models
             totalCost = GetTotalCost(p);
         }
       
-        public Order(int orderID, Customer c,Store s, DateTime orderedDate, double total)
+        public Order(int orderID, Customer c,Store s, DateTime orderedDate, decimal total)
         {
             id = orderID;
             customer = c;
@@ -66,9 +66,9 @@ namespace Models
 
 
         //Methods  **********************************************
-        private double GetTotalCost(List<Product> prods)
+        private decimal GetTotalCost(List<Product> prods)
         {
-            double totalcost = 0;
+            decimal totalcost = 0;
             for(int i = 0; i < prods.Count; i++)
             {
                 totalcost += prods[i].Price;

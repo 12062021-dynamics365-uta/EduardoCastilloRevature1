@@ -88,6 +88,7 @@ namespace Storage
                 };
                 purchases.Add(purchu);
             }
+            con.Close ();
             return purchases;
         }
 
@@ -158,12 +159,31 @@ namespace Storage
             con.Close();
         }
 
+        public List<Order> PastOrders(Customer c)
+        {
+            string sql = $"SELECT * FROM Orders WHERE CustomerID = {c.CustomerID};";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            List<Order> orders = new List<Order>();
+            while (dr.Read())
+            {
+                Customer customer = FindCustomer((int)dr[1]);
+                Store store = FindStore(dr[2].ToString());
+                Order order = new Order((int)dr[0], customer, store, (DateTime)dr[3], (decimal)dr[4]);
+                orders.Add(order);
+            }
+            con.Close();
+            return orders;
+        }
 
 
         // Store ****************************************************
         public List<Order> PastOrders(Store s)
         {
             string sql = $"SELECT * FROM Orders WHERE StoreName = '{s.StoreName}';";
+            con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
 
@@ -172,9 +192,10 @@ namespace Storage
             {
                 Customer customer = FindCustomer((int)dr[1]);
                 Store store = FindStore(dr[2].ToString());
-                Order order = new Order( (int)dr[0], customer, store, (DateTime)dr[3], (double)dr[4]); 
+                Order order = new Order( (int)dr[0], customer, store, (DateTime)dr[3], (decimal)dr[4]); 
                 orders.Add(order);
             }
+            con.Close();
             return orders;
         }
 
@@ -182,7 +203,7 @@ namespace Storage
         {
             string sql = $"SELECT Purchases.PurchasesID, Purchases.ProductName, Purchases.OrderID FROM Purchases INNER JOIN Orders ON" +
                 $" Purchases.OrderID = Orders.OrderID AND Orders.StoreName = '{s.StoreName}';";
-
+            con.Open();
             List<Purchases> purchases = new List<Purchases>();
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -198,6 +219,7 @@ namespace Storage
                 };
                 purchases.Add(purchu);
             }
+            con.Close();
             return purchases;
         }
 
@@ -223,6 +245,7 @@ namespace Storage
             string sql = $"SELECT Products.ProductName, Products.Price, Products.Description FROM Products INNER JOIN Inventory ON" +
                 $" Products.ProductName = Inventory.ProductName AND Inventory.StoreName = '{store.StoreName}';";
 
+            con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
@@ -230,18 +253,62 @@ namespace Storage
                 Product product = new Product()
                 {
                     Name = dr[0].ToString(),
-                    Price = (double)dr[1],
+                    Price = (decimal)dr[1],
                     Description = dr[2].ToString()
 
                 };
                 products.Add(product);
             }
+            con.Close();
             return products;
+        }
+
+        public List<Product> AvailableProducts()
+        {
+            List<Product> products = new List<Product>();
+            string sql = $"SELECT * FROM Products;";
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                Product product = new Product()
+                {
+                    Name = dr[0].ToString(),
+                    Price = (decimal)dr[1],
+                    Description = dr[2].ToString()
+
+                };
+                products.Add(product);
+            }
+            con.Close ();
+            return products;
+        }
+
+        public Product FindProduct(Product p)
+        {
+            Product product = null;
+            string sql = $"SELECT * FROM Products WHERE ProductName = '{p.Name}';";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                product = new Product()
+                {
+                    Name = dr[0].ToString(),
+                    Price = (decimal)dr[1],
+                    Description = dr[2].ToString()
+                };
+            }
+            con.Close();
+            return product;
         }
 
         public void AddProduct(Product p)
         {
-            string sql = $"INSERT INTO Products (ProductName, Price, Description) VALUES ('{p.Name}',{p.Price},'{p.Description}'; ";
+            string sql = $"INSERT INTO Products (ProductName, Price, Description) VALUES ('{p.Name}',{p.Price},'{p.Description}'); ";
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
@@ -250,7 +317,7 @@ namespace Storage
 
         public void DeleteProduct(Product p)
         {
-            string sql = $"DELETE FROM Products WHERE ProductName = {p.Name};";
+            string sql = $"DELETE FROM Products WHERE ProductName = '{p.Name}';";
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
@@ -269,6 +336,15 @@ namespace Storage
         public void EditProduct(Product p, double price)
         {
             string sql = $"UPDATE Products SET Price = {price} WHERE ProductName = '{p.Name}';";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sql, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public void AddInventory(Inventory i)
+        {
+            string sql = $"INSERT INTO Inventory (ProductName, StoreName) VALUES ('{i.ProductName}','{i.StoreName}'); ";
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();

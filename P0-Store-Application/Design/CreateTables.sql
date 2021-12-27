@@ -42,3 +42,10 @@ CREATE TABLE Inventory
    StoreName VARCHAR(30) NOT NULL FOREIGN KEY REFERENCES Stores(StoreName)
 );
 
+INSERT INTO Stores (StoreName) values ('PCMart');
+INSERT INTO Stores (StoreName) values ('BestBytes');
+INSERT INTO Stores (StoreName) values ('HomeLaptops');
+INSERT INTO Stores (StoreName) values ('PhoneDepot');
+
+ALTER TABLE Products ALTER COLUMN ProductName VARCHAR(50);
+ALTER TABLE Products ALTER COLUMN Description VARCHAR(100);
