@@ -85,7 +85,7 @@ namespace Client
                     if(input != "2")
                     {
                         customer.Password = input;
-                        StartShopping(customer);
+                        StartShopping(SL.Customer);
 
                         Console.WriteLine(" ");
                         Console.WriteLine(" ");
@@ -140,6 +140,7 @@ namespace Client
                                 StoreSales();
                                 break;
                         }
+                        Console.WriteLine(" ");
                         Console.WriteLine("Enter 'exit' for exit Administrator session or anything else to stay inside");
                         exit = Console.ReadLine();
                     } while (exit != "exit");
@@ -159,10 +160,11 @@ namespace Client
         {
             Store s = new Store(name);
             List<Order> orders = SL.PastSales(s);
+            Console.WriteLine(" ");
             Console.WriteLine($"{name} Sales:");
             foreach (Order o in orders)
             {                
-                Console.WriteLine($"Customer name: {o.Customer.Name} {o.Customer.LastName}  Date: {o.Date}  OrderID: {o.Id}  Total: {o.TotalCost}");
+                Console.WriteLine($"Customer name: {o.Customer.Name} {o.Customer.LastName}  Date: {o.Date}  OrderID: {o.Id}  Total: ${o.TotalCost}");
             }
 
             Console.WriteLine("");
@@ -339,12 +341,14 @@ namespace Client
                        "Or Type 1 for change store, 2 for a view of past purchases, 3 to view past product sales, or 'exit' to exit");
                 string input = Console.ReadLine();
 
-                while ((input != "1") && (input != "2") && (input != "3") && (input != "exit") && (SL.FindProduct(input) == null))
+                product = SL.FindProduct(input);
+                while ((input != "1") && (input != "2") && (input != "3") && (input != "exit") && (product == null))
                 {
                     Console.WriteLine("This product has not been found.\n");
                     Console.WriteLine("Write the name of the product to add it to the cart. \n" +
                         "Or Type 1 for change store, 2 for a view of past purchases, 3 to view past product sales, or 'exit' to exit \n");
                     input = Console.ReadLine();
+                    product = SL.FindProduct(input);
                 }
 
                 switch (input)
@@ -362,7 +366,7 @@ namespace Client
                         exit=true;
                         break;
                     default:
-                       // Console.WriteLine();
+                        BuyProducts(product);
                         break;
                 }
             } while (exit == false);
@@ -386,7 +390,7 @@ namespace Client
             List<Order> orders = SL.PastSales(c);
             foreach (Order o in orders)
             {
-                Console.WriteLine($"Date: {o.Date}  OrderID: {o.Id}  Total: {o.TotalCost}");
+                Console.WriteLine($"Date: {o.Date}  OrderID: {o.Id}  Total: ${o.TotalCost}");
             }
             Console.WriteLine(" ");
         }
@@ -402,6 +406,51 @@ namespace Client
             Console.WriteLine(" ");
         }
 
+        public static void BuyProducts(Product p)
+        {           
+            SL.AddProductToCart(p);
+            Console.WriteLine("Added \n");
+            Console.WriteLine("Enter 1 for view cart or anything else to continue shopping.\n");
+            if(Console.ReadLine() == "1")
+            {
+                Console.WriteLine("Shopping Cart");
+                foreach (Product product in SL.ShoppingCart)
+                {                  
+                    Console.WriteLine($"Product Name: {product.Name}  Price: ${product.Price}  Description: {product.Description}");
+                }
+                Console.WriteLine(" ");
+                Console.WriteLine("Enter 2 for checkout or anything else to continue shopping.");
+                if (Console.ReadLine() == "2")
+                {
+                    Order order;
+                    try
+                    {
+                        order = (Order)SL.ReviewOrder();
+                        Console.WriteLine("Order:");
+                        Console.WriteLine($"Store: {order.Store.StoreName}  Date: {order.Date}  Total: ${order.TotalCost} \n");
+                        Console.WriteLine("Enter 'y' to place order or 'n' to cancel");
+                        string decision = Console.ReadLine();
+                        if(decision == "y")
+                        {
+                            SL.MakePurchase(order);
+                            Console.WriteLine("Placed order \n");
+                        }
+                        else if(decision == "n")
+                        {
+                            SL.ShoppingCart.Clear();
+                            Console.WriteLine("Order has been canceled");
+                        }
+                        else
+                        {
 
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                }
+            }
+        }
     }
 }

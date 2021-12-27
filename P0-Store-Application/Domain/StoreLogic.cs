@@ -24,6 +24,10 @@ namespace Domain
             get { return store; }
             set { store = value; }
         }
+        public Customer Customer
+        {
+            get { return customer; }
+        }
 
         public StoreLogic()
         {
@@ -113,14 +117,12 @@ namespace Domain
             ShoppingCart.Add(product);
             return true;
         }
-
         public Product FindProduct(string productName)
         {
             Product product = new Product();
             product.Name = productName;
             return access.FindProduct(product);
         }
-
         public List<Order> PastSales(Customer c)
         {
             return access.PastOrders(c);

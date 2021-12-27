@@ -31,7 +31,7 @@ namespace Storage
         public Customer FindCustomer(Customer c)
         {
             Customer customer = null;
-
+            SqlConnection con = new SqlConnection(str);
             string querystring = "SELECT * FROM Customers WHERE Name = '" + c.Name + "' AND + LastName = '" + c.LastName + "';";
             con.Open();
             SqlCommand cmd = new SqlCommand(querystring, con);
@@ -52,11 +52,13 @@ namespace Storage
         {
             Customer c = null;
             string sql = $"SELECT * FROM Customers WHERE CustomerID = {id};";
+            SqlConnection con = new SqlConnection(str);
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
+                c = new Customer();
                 c.CustomerID = id;
                 c.Name = dr[1].ToString();
                 c.LastName = dr[2].ToString();
@@ -201,7 +203,7 @@ namespace Storage
 
         public List<Purchases> PastPurchases(Store s)
         {
-            string sql = $"SELECT Purchases.PurchasesID, Purchases.ProductName, Purchases.OrderID FROM Purchases INNER JOIN Orders ON" +
+            string sql = $"SELECT Purchases.PurchasesID, Purchases.ProductName, Purchases.OrderID, Orders.OrderedDate, Orders.StoreName FROM Purchases INNER JOIN Orders ON" +
                 $" Purchases.OrderID = Orders.OrderID AND Orders.StoreName = '{s.StoreName}';";
             con.Open();
             List<Purchases> purchases = new List<Purchases>();
@@ -227,7 +229,7 @@ namespace Storage
         {
             Store store = null;
             string sql = $"SELECT * FROM Stores WHERE StoreName = '{name}';";
-           
+            SqlConnection con = new SqlConnection(str);
             con.Open();
             SqlCommand cmd = new SqlCommand(sql, con);
             SqlDataReader dr = cmd.ExecuteReader();
