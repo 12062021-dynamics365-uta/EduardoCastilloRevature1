@@ -11,6 +11,50 @@ namespace _3_DataTypeAndVariablesChallenge
             // Insert code here.
             //
             //
+            byte aByte = 0;
+            sbyte aSbyte = -128;
+            int aInt = -2147483648;
+            uint aUInt = 0;
+            short aShort = -32768;
+            ushort aUShort = 0;
+            long aLong = -9223372036854775808;
+            ulong aULong = 0;
+            float aFloat = -3.402823e38F;
+            double aDouble = -1.79769313486232e307;
+            char aChar = 'a';
+            bool aBoolean = false;
+            object aObject = aByte;
+            string aString = "Hello World";
+            decimal aDecimal = -7922810000000000000;
+
+
+            Console.WriteLine(PrintValues(aByte));
+            Console.WriteLine(PrintValues(aSbyte));
+            Console.WriteLine(PrintValues(aInt));
+            Console.WriteLine(PrintValues(aUInt));
+            Console.WriteLine(PrintValues(aShort));
+            Console.WriteLine(PrintValues(aUShort));
+            Console.WriteLine(PrintValues(aLong));
+            Console.WriteLine(PrintValues(aULong));
+            Console.WriteLine(PrintValues(aFloat));
+            Console.WriteLine(PrintValues(aDouble));
+            Console.WriteLine(PrintValues(aChar));
+            Console.WriteLine(PrintValues(aBoolean));
+            Console.WriteLine(PrintValues(aObject));
+            Console.WriteLine(PrintValues(aString));
+            Console.WriteLine(PrintValues(aDecimal));
+
+            string firstValue = "I control text";
+            string secondValue = "45832";
+
+            int? myInt = StringToInt(secondValue);
+            //'?' the operator makes a value type accept null,
+            //that means, 'int' can be any integer, 'int?' can be any integer or null
+            if(myInt != null)
+                Console.WriteLine("First value: " + firstValue + "    " + "Second value: " + myInt);
+            else
+                Console.WriteLine("First value: " + firstValue + "    " + "Second value: " + "null");
+
         }
 
         /// <summary>
@@ -25,7 +69,26 @@ namespace _3_DataTypeAndVariablesChallenge
         /// <returns></returns>
         public static string PrintValues(object obj)
         {
-            throw new NotImplementedException($"PrintValues() has not been implemented");
+            Type type = obj.GetType();
+            switch (Type.GetTypeCode(type))
+            {
+                case TypeCode.Byte:    return "Data type => byte";
+                case TypeCode.SByte:   return "Data type => sbyte";
+                case TypeCode.Int32:   return "Data type => int";
+                case TypeCode.UInt32:  return "Data type => uint";
+                case TypeCode.Int16:   return "Data type => short";
+                case TypeCode.UInt16:  return "Data type => ushort";
+                case TypeCode.Int64:   return "Data type => long";
+                case TypeCode.UInt64:  return "Data type => ulong";
+                case TypeCode.Single:  return "Data type => float";
+                case TypeCode.Double:  return "Data type => double";
+                case TypeCode.Char:    return "Data type => char";
+                case TypeCode.Boolean: return "Data type => bool";
+                case TypeCode.Object:  return "Data type => object";
+                case TypeCode.String:  return "Data type => string";
+                case TypeCode.Decimal: return "Data type => decimal";
+                    default: return null;
+            }
         }
 
         /// <summary>
@@ -39,8 +102,12 @@ namespace _3_DataTypeAndVariablesChallenge
         /// <returns></returns>
         public static int? StringToInt(string numString)
         {
-            throw new NotImplementedException($"StringToInt() has not been implemented");
-
+            if (int.TryParse(numString, out int result))
+            {
+                return result;
+            }
+            else
+                return null;
         }
     }// end of class
 }// End of Namespace

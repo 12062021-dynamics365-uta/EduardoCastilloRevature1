@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj": {}
+    "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj": {}
   },
   "projects": {
-    "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Strings\\Strings.csproj": {
+    "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Strings\\Strings.csproj",
+        "projectUniqueName": "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj",
         "projectName": "Strings",
-        "projectPath": "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Strings\\Strings.csproj",
+        "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj",
         "packagesPath": "C:\\Users\\Eduard\\.nuget\\packages\\",
-        "outputPath": "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Strings\\obj\\",
+        "outputPath": "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Strings\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj": {
+    "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj",
+        "projectUniqueName": "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj",
         "projectName": "Tests.Strings",
-        "projectPath": "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj",
+        "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Tests.Strings\\Tests.Strings.csproj",
         "packagesPath": "C:\\Users\\Eduard\\.nuget\\packages\\",
-        "outputPath": "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Tests.Strings\\obj\\",
+        "outputPath": "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Tests.Strings\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +90,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Strings\\Strings.csproj": {
-                "projectPath": "D:\\Revature\\12062021-batch-repo\\CodingChallenges_Due12.31.2021_Midnight\\1_Strings\\1_Strings\\Strings\\Strings.csproj"
+              "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj": {
+                "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\CSharpCodingChallenges\\1_Strings\\1_Strings\\Strings\\Strings.csproj"
               }
             }
           }

@@ -1,0 +1,14 @@
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\bin\Debug\netcoreapp3.1\Strings.exe
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\bin\Debug\netcoreapp3.1\Strings.deps.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\bin\Debug\netcoreapp3.1\Strings.runtimeconfig.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\bin\Debug\netcoreapp3.1\Strings.runtimeconfig.dev.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\bin\Debug\netcoreapp3.1\Strings.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\bin\Debug\netcoreapp3.1\Strings.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.csproj.AssemblyReference.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.AssemblyInfoInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.AssemblyInfo.cs
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.csproj.CoreCompileInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\1_Strings\1_Strings\Strings\obj\Debug\netcoreapp3.1\Strings.genruntimeconfig.cache
