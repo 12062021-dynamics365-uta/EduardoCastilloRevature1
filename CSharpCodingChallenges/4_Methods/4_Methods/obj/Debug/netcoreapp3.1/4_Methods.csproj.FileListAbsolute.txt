@@ -1,0 +1,14 @@
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\bin\Debug\netcoreapp3.1\4_Methods.exe
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\bin\Debug\netcoreapp3.1\4_Methods.deps.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\bin\Debug\netcoreapp3.1\4_Methods.runtimeconfig.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\bin\Debug\netcoreapp3.1\4_Methods.runtimeconfig.dev.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\bin\Debug\netcoreapp3.1\4_Methods.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\bin\Debug\netcoreapp3.1\4_Methods.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.csproj.AssemblyReference.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.AssemblyInfoInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.AssemblyInfo.cs
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.csproj.CoreCompileInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\4_Methods\4_Methods\obj\Debug\netcoreapp3.1\4_Methods.genruntimeconfig.cache

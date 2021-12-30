@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "897ad6c5-7425-4123-a934-065cae8ab818": {
+      "ProjectGuid": "897ad6c5-7425-4123-a934-065cae8ab818",
+      "DisplayName": "6_FlowControl",
+      "ColorIndex": 0
+    },
+    "fc038d93-0861-4907-a432-1d5bb6dfa049": {
+      "ProjectGuid": "fc038d93-0861-4907-a432-1d5bb6dfa049",
+      "DisplayName": "6_FlowControlChallenge.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

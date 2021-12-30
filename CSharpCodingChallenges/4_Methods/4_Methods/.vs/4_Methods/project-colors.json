@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5eeef563-8f36-421a-8def-5d8f927369b0": {
+      "ProjectGuid": "5eeef563-8f36-421a-8def-5d8f927369b0",
+      "DisplayName": "4_Methods",
+      "ColorIndex": 0
+    },
+    "b7c84fc0-629a-4495-baf2-7b94cdc64cc2": {
+      "ProjectGuid": "b7c84fc0-629a-4495-baf2-7b94cdc64cc2",
+      "DisplayName": "4_MethodsChallenge.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
