@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f72e9318-0249-4807-8a1a-83093a92bc62": {
+      "ProjectGuid": "f72e9318-0249-4807-8a1a-83093a92bc62",
+      "DisplayName": "8_LoopsChallenge",
+      "ColorIndex": 0
+    },
+    "5dd54d7c-626b-4bfd-b046-35cc8f3757ab": {
+      "ProjectGuid": "5dd54d7c-626b-4bfd-b046-35cc8f3757ab",
+      "DisplayName": "8_LoopsChallenge.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

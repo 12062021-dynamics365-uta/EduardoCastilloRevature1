@@ -1,0 +1,14 @@
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\bin\Debug\netcoreapp3.1\8_LoopsChallenge.exe
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\bin\Debug\netcoreapp3.1\8_LoopsChallenge.deps.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\bin\Debug\netcoreapp3.1\8_LoopsChallenge.runtimeconfig.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\bin\Debug\netcoreapp3.1\8_LoopsChallenge.runtimeconfig.dev.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\bin\Debug\netcoreapp3.1\8_LoopsChallenge.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\bin\Debug\netcoreapp3.1\8_LoopsChallenge.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.csproj.AssemblyReference.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.AssemblyInfoInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.AssemblyInfo.cs
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.csproj.CoreCompileInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\8_Loops\8_Loops\obj\Debug\netcoreapp3.1\8_LoopsChallenge.genruntimeconfig.cache

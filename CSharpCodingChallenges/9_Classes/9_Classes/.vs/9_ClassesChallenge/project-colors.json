@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2b57a756-b1de-4f2d-ad07-cc637b293bac": {
+      "ProjectGuid": "2b57a756-b1de-4f2d-ad07-cc637b293bac",
+      "DisplayName": "9_ClassesChallenge",
+      "ColorIndex": 0
+    },
+    "32b89bde-bb87-427a-a55a-f7e162b85978": {
+      "ProjectGuid": "32b89bde-bb87-427a-a55a-f7e162b85978",
+      "DisplayName": "9_ClassesChallenge.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,16 @@
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\bin\Debug\net5.0\9_ClassesChallenge.exe
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\bin\Debug\net5.0\9_ClassesChallenge.deps.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\bin\Debug\net5.0\9_ClassesChallenge.runtimeconfig.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\bin\Debug\net5.0\9_ClassesChallenge.runtimeconfig.dev.json
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\bin\Debug\net5.0\9_ClassesChallenge.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\bin\Debug\net5.0\ref\9_ClassesChallenge.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\bin\Debug\net5.0\9_ClassesChallenge.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.csproj.AssemblyReference.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.AssemblyInfoInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.AssemblyInfo.cs
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.csproj.CoreCompileInputs.cache
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\ref\9_ClassesChallenge.dll
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.pdb
+D:\Revature\EduardoCastilloRevature1\CSharpCodingChallenges\9_Classes\9_Classes\obj\Debug\net5.0\9_ClassesChallenge.genruntimeconfig.cache

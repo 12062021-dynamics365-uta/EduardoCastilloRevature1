@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0ce00ff0-d271-4e82-abba-9a31ac05be1c": {
+      "ProjectGuid": "0ce00ff0-d271-4e82-abba-9a31ac05be1c",
+      "DisplayName": "11_ArraysAndListsChallenge",
+      "ColorIndex": 0
+    },
+    "cca26dec-d22b-4c17-a1a7-52b9ec24d44c": {
+      "ProjectGuid": "cca26dec-d22b-4c17-a1a7-52b9ec24d44c",
+      "DisplayName": "11_ArraysAndListsChallenge.Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
