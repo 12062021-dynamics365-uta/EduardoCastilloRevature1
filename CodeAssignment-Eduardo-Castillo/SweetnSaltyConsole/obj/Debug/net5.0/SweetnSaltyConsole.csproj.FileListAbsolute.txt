@@ -1,0 +1,16 @@
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\bin\Debug\net5.0\SweetnSaltyConsole.exe
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\bin\Debug\net5.0\SweetnSaltyConsole.deps.json
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\bin\Debug\net5.0\SweetnSaltyConsole.runtimeconfig.json
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\bin\Debug\net5.0\SweetnSaltyConsole.runtimeconfig.dev.json
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\bin\Debug\net5.0\SweetnSaltyConsole.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\bin\Debug\net5.0\ref\SweetnSaltyConsole.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\bin\Debug\net5.0\SweetnSaltyConsole.pdb
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.csproj.AssemblyReference.cache
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.AssemblyInfoInputs.cache
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.AssemblyInfo.cs
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.csproj.CoreCompileInputs.cache
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\ref\SweetnSaltyConsole.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.pdb
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyConsole\obj\Debug\net5.0\SweetnSaltyConsole.genruntimeconfig.cache
