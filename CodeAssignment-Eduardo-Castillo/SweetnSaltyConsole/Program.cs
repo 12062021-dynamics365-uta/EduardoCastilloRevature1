@@ -12,42 +12,43 @@ namespace SweetnSaltyConsole
             int sweet = 0;
             while (count <=1000)
             {
+                //The while loop is for counting to 1000, the for loop is for printing in groups of 20
                 for (int i = 0; i < 20; i++)
                 {
-                    if(count%5 == 0)
+                    // if/else decide between three cases, divisible by 5, divisible by 3 or by none
+                    if (count%5 == 0)
                     {
-                        if (count % 3 == 0)
+                        if (count % 3 == 0)//Check if it is also divisible by 3
                         {
                             Console.Write("sweet’nSalty ");
-                            count++;
                             sweetnSalty++;
                         }
                         else
                         {
                             Console.Write("salty ");
-                            count++;
                             salty++;
                         }                           
                     }
                     else if(count%3 == 0)
                     {
                         Console.Write("sweet ");
-                        count++;
                         sweet++;
                     }
                     else
                     {
                         Console.Write(count + " ");
-                        count++;
-                    }                    
-                }
+                    }   
+                    count++;
+                }//End for loop
+
                 Console.WriteLine();                
-            }
+            }//End while loop
+
             Console.WriteLine();
             Console.WriteLine(" ------------------------------------------------------------------------");
-            Console.WriteLine($" Sweets: {sweet}      Salties: {salty}       Sweet’nSalties: {sweetnSalty}");
-
-
+            Console.WriteLine($" Sweets: {sweet}      Salties: {salty}       Sweet’nSalties: {sweetnSalty}");           
         }
+
+      
     }
 }
