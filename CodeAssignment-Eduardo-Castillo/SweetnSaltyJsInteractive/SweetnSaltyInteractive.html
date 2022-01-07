@@ -15,7 +15,6 @@
     <style>
         body {
             background: rgb(191, 199, 156);
-            font-family: 'Black Ops One', cursive;
             color: white;
         }
 
@@ -34,19 +33,39 @@
             overflow: auto;
         }
 
-        p {
+        #text {
             margin: 5px;
-
+            font-family: 'Black Ops One', cursive;
         }
 
         input {
             margin: 5px;
+            margin-top: -40px;
         }
 
         #restartButton {
+
+            visibility: collapse;
+        }
+
+        button {
             display: block;
             margin: 10px;
+        }
+
+        #warning {
+            margin-top: -43px;
+            margin-left: 5px;
+            color: red;
+        }
+
+        #startInput {
             visibility: collapse;
+        }
+
+        #stopInput {
+            visibility: collapse;
+            margin-left: -178px;
         }
     </style>
     <!-- style ends ******************************************************************************************************************************************** -->
@@ -60,23 +79,33 @@
         let startInput = document.createElement('input');
         let stopInput = document.createElement('input');
         let restartApp = document.createElement('button');
+        let warning = document.createElement('p');
+        let startApp = document.createElement('button');
         board.id = 'board';
         startInput.id = 'startInput';
         stopInput.id = 'stopInput';
         restartApp.id = 'restartButton';
         restartApp.innerText = 'Delete and restart';
+        startApp.id = 'startButton';
+        startApp.innerText = 'Start';
+        text.id = 'text';
+        warning.id = 'warning';
         document.body.appendChild(board);
         board.appendChild(text);
+        board.appendChild(startApp);
         board.appendChild(startInput);
+        board.appendChild(stopInput);
         board.appendChild(restartApp);
+        board.appendChild(warning);
+        
 
         let start;
         let stop;
-
+        pattern = /^\d+$/; //pattern.test(string)  returns true if all characters are numbers
 
         let intro = 'Welcome to the Sweet and Salty Console. You will enter a range of number and the console will print it all. '
             + 'Except that the ones multiple of three, it will print “sweet” instead of the number, for the ones multiple of five “salty”, '
-            + 'and for numbers which are multiples of three and five “sweet’nSalty”.\n\nIn the box below, enter the number by which the counting will begin, and press Enter.';
+            + 'and for numbers which are multiples of three and five “sweet’nSalty”.';
         text.innerText = intro;
 
 
@@ -88,11 +117,11 @@
             let sweet = 0;
             let consoleLine = "";
             let result = "";
+            let rest = (stop - start) % 40;
 
-            while (count <= stop) {
+            while (count < (stop - rest)) {
                 //The while loop is for counting to 1000, the for loop is for printing in groups of 20
                 for (let i = 0; i < 40; i++) {
-
 
                     // if/else decide between three cases, divisible by 5, divisible by 3 or by none
                     if (count % 5 == 0) {
@@ -102,19 +131,21 @@
                             sweetnSalty++;
                         }
                         else {
-                            consoleLine += "salty ";
+                            consoleLine += "salty,";
                             salty++;
                         }
                     }
                     else if (count % 3 == 0) {
-                        consoleLine += "sweet ";
+                        consoleLine += "sweet,";
                         sweet++;
                     }
                     else {
-                        consoleLine += count + " ";
+                        consoleLine += count + ",";
                     }
                     count++;
-
+                    if (count > (stop - rest)) {
+                        break;
+                    }
                 }//End for loop
 
 
@@ -123,42 +154,103 @@
 
             }//End while loop
 
-
+            while (count <= stop) {
+                //These while loop is for counting the last line that is less than 40
+                if (count % 5 == 0) {
+                    if (count % 3 == 0)//Check if it is also divisible by 3
+                    {
+                        consoleLine += "sweet’nSalty";
+                        sweetnSalty++;
+                    }
+                    else {
+                        consoleLine += "salty,";
+                        salty++;
+                    }
+                }
+                else if (count % 3 == 0) {
+                    consoleLine += "sweet,";
+                    sweet++;
+                }
+                else {
+                    consoleLine += count + ",";
+                }
+                count++;
+                result += consoleLine;
+                consoleLine = "";
+            }
 
             result += '\n';
             result += "----------------------------------------------------------------------------------------------------\n";
-            result += `Sweets: ${sweet}      Salties: ${salty}       Sweet’nSalties: ${sweetnSalty}`;
+            result += `Sweets:  ${sweet}  \n    Salties:  ${salty}   \n    Sweet’nSalties:  ${sweetnSalty}`;
             return result;
         }
 
+        startApp.addEventListener('click', (e) => {
+            text.innerText = 'In the box below, enter the number by which the counting will begin, and press Enter.';
+            startApp.style.visibility ='collapse';
+            startInput.style.visibility = 'visible';      
+            startInput.focus();
+        });
 
+        
 
         startInput.addEventListener('keypress', (e) => {
             if (e.key == 'Enter') {
-                start = startInput.value;
-                text.innerText = 'Now, enter the number at which the count will stop and press Enter';
-                startInput.value= '';
-                board.removeChild(startInput);
-                board.appendChild(stopInput);
-                stopInput.focus();
+                if (startInput.value === '') {
+                    warning.innerText = 'Please, enter a number.';
+                }
+                else if (startInput.value < 200 || startInput.value > 10000) {
+                    warning.innerText = 'Please enter a positive number between 200 and 10,000';
+                }
+                else if (!pattern.test(startInput.value)) {
+                    warning.innerText = 'Only numbers, no letters';
+                }
+                else {
+                    warning.innerText = '';
+                    start = startInput.value;
+                    text.innerText = 'Now, enter the number at which the count will stop and press Enter';
+                    startInput.value = '';
+                    startInput.style.visibility = 'collapse';
+                    stopInput.style.visibility = 'visible';
+                    stopInput.focus();
+                }
+
             }
         });
 
         stopInput.addEventListener('keypress', (e) => {
             if (e.key == 'Enter') {
-                stop = stopInput.value;
-                text.innerText = GetNumbers(start, stop);
-                stopInput.value ='';
-                board.removeChild(stopInput);
-                restartApp.style.visibility = 'visible';
+                if (stopInput.value === '') {
+                    warning.innerText = 'Please, enter a number.';
+                }
+                else if (stopInput.value < 0) {
+                    warning.innerText = `Please enter a positive number`;
+                }
+                else if (stopInput.value > 10000) {
+                    warning.innerText = `Please enter number lower than 10,000`;
+                }
+                else if (parseInt(stopInput.value, 10) <= start) {
+                    warning.innerText = `Please enter a number greater that ${start}`;
+                }
+                else if (!pattern.test(stopInput.value)) {
+                    warning.innerText = 'Only numbers, no letters';
+                }
+                else {
+                    warning.innerText = '';
+                    stop = stopInput.value;
+                    text.innerText = GetNumbers(start, stop);
+                    stopInput.value = '';
+                    stopInput.style.visibility = 'collapse';
+                    restartApp.style.visibility = 'visible';
+                }
             }
         });
 
         restartApp.addEventListener('click', (e) => {
-           text.innerText = intro;
-           restartApp.style.visibility = 'collapse';
-           board.appendChild(startInput);
-           startInput.focus();
+            text.innerText = intro;
+            restartApp.style.visibility = 'collapse';
+            startApp.style.visibility = 'visible';
+            startInput.focus();
         });
 
     </script>
