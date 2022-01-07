@@ -31,6 +31,9 @@
             width: 90%;
             max-width: 1200px;
             overflow: auto;
+            box-shadow: 3px 3px 25px 6px rgb(76, 82, 76);
+            border: 0.1px solid rgba(11, 33, 70, 0.945);
+            padding: 5px;
         }
 
         #text {
@@ -41,6 +44,8 @@
         input {
             margin: 5px;
             margin-top: -40px;
+            font-family: 'Black Ops One', cursive;
+            font-size: 1.2em;
         }
 
         #restartButton {
@@ -51,10 +56,19 @@
         button {
             display: block;
             margin: 10px;
+            background-color: rgb(21, 168, 40);
+            border: 0.1px solid rgba(11, 33, 70, 0.945);
+            border-radius: 3px;
+            font-family: 'Black Ops One', cursive;
+            font-size: 1.5em;
+        }
+
+        button:hover {
+            background-color: rgb(27, 211, 52);
         }
 
         #warning {
-            margin-top: -43px;
+            margin-top: -50px;
             margin-left: 5px;
             color: red;
         }
@@ -65,7 +79,31 @@
 
         #stopInput {
             visibility: collapse;
-            margin-left: -178px;
+            margin-left: -250px;
+        }
+
+        span {
+            background-color: rgb(119, 192, 59);
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.6em;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgb(76, 82, 76);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(39, 124, 51);
+            border-radius: var(--second-border-radius);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(45, 158, 60);
         }
     </style>
     <!-- style ends ******************************************************************************************************************************************** -->
@@ -97,24 +135,23 @@
         board.appendChild(stopInput);
         board.appendChild(restartApp);
         board.appendChild(warning);
-        
+
 
         let start;
         let stop;
         pattern = /^\d+$/; //pattern.test(string)  returns true if all characters are numbers
+        let sweetnSalty = 0;
+        let salty = 0;
+        let sweet = 0;
 
         let intro = 'Welcome to the Sweet and Salty Console. You will enter a range of number and the console will print it all. '
             + 'Except that the ones multiple of three, it will print “sweet” instead of the number, for the ones multiple of five “salty”, '
             + 'and for numbers which are multiples of three and five “sweet’nSalty”.';
-        text.innerText = intro;
-
+        text.innerHTML = `<p>${intro}<p>`
 
 
         function GetNumbers(start, stop) {
             let count = start;
-            let sweetnSalty = 0;
-            let salty = 0;
-            let sweet = 0;
             let consoleLine = "";
             let result = "";
             let rest = (stop - start) % 40;
@@ -127,16 +164,16 @@
                     if (count % 5 == 0) {
                         if (count % 3 == 0)//Check if it is also divisible by 3
                         {
-                            consoleLine += "sweet’nSalty";
+                            consoleLine += "<span>sweet’nSalty</span>,";
                             sweetnSalty++;
                         }
                         else {
-                            consoleLine += "salty,";
+                            consoleLine += "<span>salty</span>,";
                             salty++;
                         }
                     }
                     else if (count % 3 == 0) {
-                        consoleLine += "sweet,";
+                        consoleLine += "<span>sweet</span>,";
                         sweet++;
                     }
                     else {
@@ -159,16 +196,16 @@
                 if (count % 5 == 0) {
                     if (count % 3 == 0)//Check if it is also divisible by 3
                     {
-                        consoleLine += "sweet’nSalty";
+                        consoleLine += "<span>sweet’nSalty</span>,";
                         sweetnSalty++;
                     }
                     else {
-                        consoleLine += "salty,";
+                        consoleLine += "<span>salty</span>,";
                         salty++;
                     }
                 }
                 else if (count % 3 == 0) {
-                    consoleLine += "sweet,";
+                    consoleLine += "<span>sweet</span>,";
                     sweet++;
                 }
                 else {
@@ -179,20 +216,17 @@
                 consoleLine = "";
             }
 
-            result += '\n';
-            result += "----------------------------------------------------------------------------------------------------\n";
-            result += `Sweets:  ${sweet}  \n    Salties:  ${salty}   \n    Sweet’nSalties:  ${sweetnSalty}`;
-            return result;
+            return numbers = `${result}`;
         }
 
         startApp.addEventListener('click', (e) => {
             text.innerText = 'In the box below, enter the number by which the counting will begin, and press Enter.';
-            startApp.style.visibility ='collapse';
-            startInput.style.visibility = 'visible';      
+            startApp.style.visibility = 'collapse';
+            startInput.style.visibility = 'visible';
             startInput.focus();
         });
 
-        
+
 
         startInput.addEventListener('keypress', (e) => {
             if (e.key == 'Enter') {
@@ -238,7 +272,17 @@
                 else {
                     warning.innerText = '';
                     stop = stopInput.value;
-                    text.innerText = GetNumbers(start, stop);
+                    text.innerHTML = GetNumbers(start, stop);
+                    text.innerHTML += '<br>';
+                    let totals = "----------------------------------------------------------------------------------------------------";
+                    text.innerHTML += `<p>${totals}</p>`;
+                    totals = `Sweets:  ${sweet}`;
+                    text.innerHTML += `<p>${totals}</p>`;
+                    totals = `Salties:  ${salty}`;
+                    text.innerHTML += `<p>${totals}</p>`;
+                    totals = `Sweet’nSalties:  ${sweetnSalty}`;
+                    text.innerHTML += `<p>${totals}</p>`;
+
                     stopInput.value = '';
                     stopInput.style.visibility = 'collapse';
                     restartApp.style.visibility = 'visible';
