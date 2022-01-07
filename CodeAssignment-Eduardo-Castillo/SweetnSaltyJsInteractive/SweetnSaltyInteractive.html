@@ -19,7 +19,7 @@
             color: white;
         }
 
-        .board {
+        #board {
             background: rgb(43, 53, 44);
             height: 180px;
             border-radius: 10px;
@@ -31,6 +31,22 @@
             margin-right: auto;
             width: 90%;
             max-width: 1200px;
+            overflow: auto;
+        }
+
+        p {
+            margin: 5px;
+
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        #restartButton {
+            display: block;
+            margin: 10px;
+            visibility: collapse;
         }
     </style>
     <!-- style ends ******************************************************************************************************************************************** -->
@@ -40,9 +56,111 @@
 
     <script>
         let board = document.createElement('div');
-        board.classList.add('board');
+        let text = document.createElement('p');
+        let startInput = document.createElement('input');
+        let stopInput = document.createElement('input');
+        let restartApp = document.createElement('button');
+        board.id = 'board';
+        startInput.id = 'startInput';
+        stopInput.id = 'stopInput';
+        restartApp.id = 'restartButton';
+        restartApp.innerText = 'Delete and restart';
         document.body.appendChild(board);
-        board.innerText = 'sweet’nSalty console';
+        board.appendChild(text);
+        board.appendChild(startInput);
+        board.appendChild(restartApp);
+
+        let start;
+        let stop;
+
+
+        let intro = 'Welcome to the Sweet and Salty Console. You will enter a range of number and the console will print it all. '
+            + 'Except that the ones multiple of three, it will print “sweet” instead of the number, for the ones multiple of five “salty”, '
+            + 'and for numbers which are multiples of three and five “sweet’nSalty”.\n\nIn the box below, enter the number by which the counting will begin, and press Enter.';
+        text.innerText = intro;
+
+
+
+        function GetNumbers(start, stop) {
+            let count = start;
+            let sweetnSalty = 0;
+            let salty = 0;
+            let sweet = 0;
+            let consoleLine = "";
+            let result = "";
+
+            while (count <= stop) {
+                //The while loop is for counting to 1000, the for loop is for printing in groups of 20
+                for (let i = 0; i < 40; i++) {
+
+
+                    // if/else decide between three cases, divisible by 5, divisible by 3 or by none
+                    if (count % 5 == 0) {
+                        if (count % 3 == 0)//Check if it is also divisible by 3
+                        {
+                            consoleLine += "sweet’nSalty";
+                            sweetnSalty++;
+                        }
+                        else {
+                            consoleLine += "salty ";
+                            salty++;
+                        }
+                    }
+                    else if (count % 3 == 0) {
+                        consoleLine += "sweet ";
+                        sweet++;
+                    }
+                    else {
+                        consoleLine += count + " ";
+                    }
+                    count++;
+
+                }//End for loop
+
+
+                result += consoleLine + '\n' + '\n';
+                consoleLine = ""; //clear for the next time loop
+
+            }//End while loop
+
+
+
+            result += '\n';
+            result += "----------------------------------------------------------------------------------------------------\n";
+            result += `Sweets: ${sweet}      Salties: ${salty}       Sweet’nSalties: ${sweetnSalty}`;
+            return result;
+        }
+
+
+
+        startInput.addEventListener('keypress', (e) => {
+            if (e.key == 'Enter') {
+                start = startInput.value;
+                text.innerText = 'Now, enter the number at which the count will stop and press Enter';
+                startInput.value= '';
+                board.removeChild(startInput);
+                board.appendChild(stopInput);
+                stopInput.focus();
+            }
+        });
+
+        stopInput.addEventListener('keypress', (e) => {
+            if (e.key == 'Enter') {
+                stop = stopInput.value;
+                text.innerText = GetNumbers(start, stop);
+                stopInput.value ='';
+                board.removeChild(stopInput);
+                restartApp.style.visibility = 'visible';
+            }
+        });
+
+        restartApp.addEventListener('click', (e) => {
+           text.innerText = intro;
+           restartApp.style.visibility = 'collapse';
+           board.appendChild(startInput);
+           startInput.focus();
+        });
+
     </script>
 </body>
 
