@@ -1,0 +1,17 @@
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\SweetnSaltyBusiness.deps.json
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\SweetnSaltyBusiness.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\ref\SweetnSaltyBusiness.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\SweetnSaltyBusiness.pdb
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\SweetnSaltyDbAccess.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\SweetnSaltyModels.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\SweetnSaltyDbAccess.pdb
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\bin\Debug\net5.0\SweetnSaltyModels.pdb
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.csproj.AssemblyReference.cache
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.GeneratedMSBuildEditorConfig.editorconfig
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.AssemblyInfoInputs.cache
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.AssemblyInfo.cs
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.csproj.CoreCompileInputs.cache
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.csproj.CopyComplete
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\ref\SweetnSaltyBusiness.dll
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyBusiness\obj\Debug\net5.0\SweetnSaltyBusiness.pdb
