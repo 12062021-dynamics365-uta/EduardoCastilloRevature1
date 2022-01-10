@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9500dc0e-336a-473a-859d-0b05b9b71d13": {
+      "ProjectGuid": "9500dc0e-336a-473a-859d-0b05b9b71d13",
+      "DisplayName": "SweetnSaltyModels",
+      "ColorIndex": 0
+    },
+    "47c1c86d-fa30-418c-80dd-9a2e72ef4be8": {
+      "ProjectGuid": "47c1c86d-fa30-418c-80dd-9a2e72ef4be8",
+      "DisplayName": "SweetnSaltyDbAccess",
+      "ColorIndex": 1
+    },
+    "2650a970-d303-405f-9a2b-2cc92a842e5a": {
+      "ProjectGuid": "2650a970-d303-405f-9a2b-2cc92a842e5a",
+      "DisplayName": "SweetnSaltyBusiness",
+      "ColorIndex": 2
+    },
+    "34f12c78-c2ef-49b2-9c81-9a55859ccac9": {
+      "ProjectGuid": "34f12c78-c2ef-49b2-9c81-9a55859ccac9",
+      "DisplayName": "SweetnSaltyAPI",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

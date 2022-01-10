@@ -1,0 +1,20 @@
+
+CREATE TABLE Person
+(
+   PersonId INT NOT NULL IDENTITY PRIMARY KEY,
+   Fname VARCHAR(30),
+   Lname VARCHAR(30)
+);
+
+CREATE TABLE Flavor
+(
+   FlavorId INT NOT NULL IDENTITY PRIMARY KEY,
+   FlavorName VARCHAR(30),
+);
+
+CREATE TABLE PersonFlavorJunction
+(
+    PersonFlavor INT NOT NULL IDENTITY PRIMARY KEY, 
+    PersonId INT NOT NULL FOREIGN KEY REFERENCES Person(PersonId),
+	FlavorId INT NOT NULL FOREIGN KEY REFERENCES Flavor(FlavorId)
+);
