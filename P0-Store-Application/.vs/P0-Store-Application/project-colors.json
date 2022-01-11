@@ -23,9 +23,14 @@
     },
     "8079e241-352d-4f5f-acf9-3e2cb44974a5": {
       "ProjectGuid": "8079e241-352d-4f5f-acf9-3e2cb44974a5",
-      "DisplayName": "Testing",
+      "DisplayName": "Testing1",
       "ColorIndex": 4
+    },
+    "471950b4-9f9e-4f93-973d-c054fa5eebf7": {
+      "ProjectGuid": "471950b4-9f9e-4f93-973d-c054fa5eebf7",
+      "DisplayName": "TestProject",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

@@ -5146,9 +5146,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Testing\\Testing.csproj",
-      "projectName": "Testing",
-      "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Testing\\Testing.csproj",
+      "projectUniqueName": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Testing\\Testing1.csproj",
+      "projectName": "Testing1",
+      "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Testing\\Testing1.csproj",
       "packagesPath": "C:\\Users\\Eduard\\.nuget\\packages\\",
       "outputPath": "D:\\Revature\\EduardoCastilloRevature1\\P0-Store-Application\\Testing\\obj\\",
       "projectStyle": "PackageReference",

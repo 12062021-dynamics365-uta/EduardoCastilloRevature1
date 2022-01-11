@@ -5,7 +5,12 @@
       "ProjectGuid": "cc8c451b-861e-4217-8d65-a60331ede7a6",
       "DisplayName": "Strings",
       "ColorIndex": 0
+    },
+    "d651f046-b6d5-450a-a6fd-f1e89e6767d5": {
+      "ProjectGuid": "d651f046-b6d5-450a-a6fd-f1e89e6767d5",
+      "DisplayName": "Tests.Strings",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
