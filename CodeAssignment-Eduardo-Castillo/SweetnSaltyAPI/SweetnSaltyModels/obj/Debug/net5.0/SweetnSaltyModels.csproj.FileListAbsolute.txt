@@ -1,6 +1,5 @@
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\bin\Debug\net5.0\SweetnSaltyModels.deps.json
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\bin\Debug\net5.0\SweetnSaltyModels.dll
-D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\bin\Debug\net5.0\ref\SweetnSaltyModels.dll
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\bin\Debug\net5.0\SweetnSaltyModels.pdb
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\obj\Debug\net5.0\SweetnSaltyModels.csproj.AssemblyReference.cache
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\obj\Debug\net5.0\SweetnSaltyModels.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,3 +9,4 @@ D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSalty
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\obj\Debug\net5.0\SweetnSaltyModels.dll
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\obj\Debug\net5.0\ref\SweetnSaltyModels.dll
 D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\obj\Debug\net5.0\SweetnSaltyModels.pdb
+D:\Revature\EduardoCastilloRevature1\CodeAssignment-Eduardo-Castillo\SweetnSaltyAPI\SweetnSaltyModels\obj\Debug\net5.0\refint\SweetnSaltyModels.dll

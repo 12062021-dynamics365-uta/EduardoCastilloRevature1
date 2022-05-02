@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj": {}
+    "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj": {}
   },
   "projects": {
-    "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj": {
+    "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj",
+        "projectUniqueName": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj",
         "projectName": "SweetnSaltyModels",
-        "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj",
+        "projectPath": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj",
         "packagesPath": "C:\\Users\\Eduard\\.nuget\\packages\\",
-        "outputPath": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\obj\\",
+        "outputPath": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

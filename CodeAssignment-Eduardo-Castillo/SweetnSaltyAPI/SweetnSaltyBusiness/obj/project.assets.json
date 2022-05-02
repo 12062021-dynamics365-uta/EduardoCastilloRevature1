@@ -801,11 +801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyBusiness\\SweetnSaltyBusiness.csproj",
+      "projectUniqueName": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyBusiness\\SweetnSaltyBusiness.csproj",
       "projectName": "SweetnSaltyBusiness",
-      "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyBusiness\\SweetnSaltyBusiness.csproj",
+      "projectPath": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyBusiness\\SweetnSaltyBusiness.csproj",
       "packagesPath": "C:\\Users\\Eduard\\.nuget\\packages\\",
-      "outputPath": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyBusiness\\obj\\",
+      "outputPath": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -826,11 +826,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyDbAccess\\SweetnSaltyDbAccess.csproj": {
-              "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyDbAccess\\SweetnSaltyDbAccess.csproj"
+            "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyDbAccess\\SweetnSaltyDbAccess.csproj": {
+              "projectPath": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyDbAccess\\SweetnSaltyDbAccess.csproj"
             },
-            "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj": {
-              "projectPath": "D:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj"
+            "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj": {
+              "projectPath": "E:\\Revature\\EduardoCastilloRevature1\\CodeAssignment-Eduardo-Castillo\\SweetnSaltyAPI\\SweetnSaltyModels\\SweetnSaltyModels.csproj"
             }
           }
         }
@@ -859,7 +859,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
