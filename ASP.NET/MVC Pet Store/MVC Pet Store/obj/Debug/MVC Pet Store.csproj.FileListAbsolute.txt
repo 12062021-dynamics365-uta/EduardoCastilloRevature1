@@ -118,3 +118,5 @@ E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Deb
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddPetType.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.SetPetTypes.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.ModUsers.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.modPets.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.modPets1.resources
