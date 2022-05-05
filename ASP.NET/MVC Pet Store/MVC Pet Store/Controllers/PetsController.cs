@@ -27,11 +27,21 @@ namespace MVC_Pet_Store.Controllers
 
 
         // GET: Pets
-        public ActionResult Index()
+        public ViewResult Index()
         {
-            var pets = _context.Pets.Include(m => m.PetType).ToList();
+            var pets = _context.Pets.Include(c => c.PetType).ToList();
 
             return View(pets);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var pet = _context.Pets.Include(c => c.PetType).Include( c => c.Color).Include( c => c.Gender).SingleOrDefault(c => c.Id == id);
+
+            if (pet == null)
+                return HttpNotFound();
+
+            return View(pet);
         }
     }
 }
