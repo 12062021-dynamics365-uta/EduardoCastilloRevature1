@@ -11,6 +11,8 @@ namespace MVC_Pet_Store.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        [Display(Name = "Name")]
         public string FullName { get { return FirstName + " " + LastName; } }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }

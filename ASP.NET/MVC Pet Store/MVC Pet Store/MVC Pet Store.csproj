@@ -228,8 +228,17 @@
     <Compile Include="Migrations\202205040342375_modPets1.designer.cs">
       <DependentUpon>202205040342375_modPets1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205051925117_AddAdministrator.cs" />
+    <Compile Include="Migrations\202205051925117_AddAdministrator.designer.cs">
+      <DependentUpon>202205051925117_AddAdministrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205152000149_SeedUsers.cs" />
+    <Compile Include="Migrations\202205152000149_SeedUsers.designer.cs">
+      <DependentUpon>202205152000149_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -246,6 +255,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\pets%402x-890x266.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -297,9 +307,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Pets\Index.cshtml" />
+    <Content Include="Views\Pets\List.cshtml" />
     <Content Include="Views\Pets\Details.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\UsersAdm.cshtml" />
+    <Content Include="Views\Pets\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -356,6 +369,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205040342375_modPets1.resx">
       <DependentUpon>202205040342375_modPets1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205051925117_AddAdministrator.resx">
+      <DependentUpon>202205051925117_AddAdministrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205152000149_SeedUsers.resx">
+      <DependentUpon>202205152000149_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

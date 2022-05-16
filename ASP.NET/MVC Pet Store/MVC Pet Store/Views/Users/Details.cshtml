@@ -1,0 +1,26 @@
+﻿@model MVC_Pet_Store.Models.User
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.FullName</h2>
+
+<h3>Personal information</h3>
+<ul>
+    <li>First Name: @Model.FirstName</li>
+    <li>Last Name: @Model.LastName</li>
+    <li>Email: @Model.Email</li>
+    <li>Phone Number: @Model.PhoneNumber</li>
+</ul>
+<br />
+<h3>Pet preferences</h3>
+<ul>
+    <li>Type: @Model.DesiredPetType.Type</li>
+    <li>Age: @Model.DesiredAge</li>
+    <li>Color: @Model.DesiredColor.ColorName</li>
+    <li>Gender: @Model.DesiredGender.GenderName</li>
+    <li>Others: @Model.OtherPreferences</li>
+</ul>
+

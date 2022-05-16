@@ -22,7 +22,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Available pets", "Index", "Pets")</li>
-                    <li>@Html.ActionLink("Users", "Index", "Users")</li>
+                    <li>@Html.ActionLink("User", "Index", "Users")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -31,7 +31,7 @@
 
 
 
-    <div class="container body-content">
+    <div class="container body-content text-center homeTitle">
         @RenderBody()
         <hr />
 

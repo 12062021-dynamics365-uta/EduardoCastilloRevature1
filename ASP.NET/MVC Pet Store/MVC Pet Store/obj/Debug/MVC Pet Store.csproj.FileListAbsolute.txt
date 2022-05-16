@@ -102,12 +102,7 @@ E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\bin\Mic
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\bin\Microsoft.Owin.Security.OAuth.xml
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.AssemblyReference.cache
-E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.CoreCompileInputs.cache
-E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.CopyComplete
-E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.dll
-E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.pdb
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddStore.resources
-E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.GenerateResource.cache
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddPet.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddUser.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddColor.resources
@@ -120,3 +115,10 @@ E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Deb
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.ModUsers.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.modPets.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.modPets1.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.GenerateResource.cache
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.CoreCompileInputs.cache
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.CopyComplete
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.dll
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.pdb
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddAdministrator.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.SeedUsers.resources

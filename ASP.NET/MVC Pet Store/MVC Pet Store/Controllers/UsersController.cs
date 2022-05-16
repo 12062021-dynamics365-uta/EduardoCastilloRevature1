@@ -31,7 +31,10 @@ namespace MVC_Pet_Store.Controllers
         {
             var users = _context.PetUsers.ToList();
 
-            return View(users);
+            if (User.IsInRole("Manager"))
+                return View("UsersAdm", users);
+            else
+                return View("Index", users);
         }
 
         public ActionResult Details(int id)
@@ -43,6 +46,13 @@ namespace MVC_Pet_Store.Controllers
                 return HttpNotFound();
 
             return View(user);
+        }
+
+
+        [HttpPost]
+        public ActionResult GoToUser(User user)
+        {
+            return Content(user.FirstName);
         }
     }
 }

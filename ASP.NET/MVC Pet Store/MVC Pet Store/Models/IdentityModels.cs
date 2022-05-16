@@ -26,6 +26,7 @@ namespace MVC_Pet_Store.Models
         public DbSet<Color> Colors { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<PetType> PetTypes { get; set; }
+        public DbSet<Administrator> Administrators { get; set; }
 
 
         public ApplicationDbContext()

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MVC_Pet_Store.Models.Pet>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Avalilable Pets</h2>
+
+@if (!Model.Any())
+{
+    <p>We don't have any pet yet.</p>
+}
+else
+{
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Pet name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pet in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(pet.Name, "Details", "Pets", new { id = pet.Id }, null)</td>
+                <td>@pet.PetType.Type</td>
+            </tr>
+        }
+    </tbody>
+</table>
+}

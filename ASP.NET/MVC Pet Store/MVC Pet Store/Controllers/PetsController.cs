@@ -31,7 +31,11 @@ namespace MVC_Pet_Store.Controllers
         {
             var pets = _context.Pets.Include(c => c.PetType).ToList();
 
-            return View(pets);
+            if (User.IsInRole("Manager"))
+                return View("List", pets);
+            else
+                return View("ReadOnlyList", pets);
+
         }
 
         public ActionResult Details(int id)
