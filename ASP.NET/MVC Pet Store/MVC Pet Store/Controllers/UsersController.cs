@@ -29,7 +29,7 @@ namespace MVC_Pet_Store.Controllers
         // GET: Users
         public ViewResult Index()
         {
-            var users = _context.PetUsers.ToList();
+            var users = _context.Users.ToList();
 
             if (User.IsInRole("Manager"))
                 return View("UsersAdm", users);
@@ -37,9 +37,9 @@ namespace MVC_Pet_Store.Controllers
                 return View("Index", users);
         }
 
-        public ActionResult Details(int id)
+        public ActionResult Details(string id)
         {
-            var user = _context.PetUsers.Include(c => c.DesiredPetType).Include(c => c.DesiredGender).Include(c => c.DesiredColor).SingleOrDefault(c => c.Id == id);
+            var user = _context.Users.Include(c => c.DesiredPetType).Include(c => c.DesiredGender).Include(c => c.DesiredColor).SingleOrDefault(c => c.Id == id);
 
 
             if (user == null)
@@ -50,7 +50,7 @@ namespace MVC_Pet_Store.Controllers
 
 
         [HttpPost]
-        public ActionResult GoToUser(User user)
+        public ActionResult GoToUser(ApplicationUser user)
         {
             return Content(user.FirstName);
         }

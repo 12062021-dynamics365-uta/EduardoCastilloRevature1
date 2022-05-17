@@ -236,9 +236,16 @@
     <Compile Include="Migrations\202205152000149_SeedUsers.designer.cs">
       <DependentUpon>202205152000149_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205161443091_DeleteAdministrators.cs" />
+    <Compile Include="Migrations\202205161443091_DeleteAdministrators.designer.cs">
+      <DependentUpon>202205161443091_DeleteAdministrators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205161852027_MovingUserToApplicationUser.cs" />
+    <Compile Include="Migrations\202205161852027_MovingUserToApplicationUser.designer.cs">
+      <DependentUpon>202205161852027_MovingUserToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -246,7 +253,6 @@
     <Compile Include="Models\Pet.cs" />
     <Compile Include="Models\PetType.cs" />
     <Compile Include="Models\Store.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -375,6 +381,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205152000149_SeedUsers.resx">
       <DependentUpon>202205152000149_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205161443091_DeleteAdministrators.resx">
+      <DependentUpon>202205161443091_DeleteAdministrators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205161852027_MovingUserToApplicationUser.resx">
+      <DependentUpon>202205161852027_MovingUserToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

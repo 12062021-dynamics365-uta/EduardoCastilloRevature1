@@ -79,6 +79,29 @@ namespace MVC_Pet_Store.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        [Display(Name = "Phone")]
+        public string PhoneNumber { get; set; }
+
+
+        [Display(Name = "Age")]
+        public int? DesiredAge { get; set; }
+        [Display(Name = "Color")]
+        public Color DesiredColor { get; set; }
+        public byte DesiredColorId { get; set; }
+        [Display(Name = "Gender")]
+        public Gender DesiredGender { get; set; }
+        public byte DesiredGenderId { get; set; }
+        [Display(Name = "Type")]
+        public PetType DesiredPetType { get; set; }
+        public byte DesiredPetTypeId { get; set; }
+        [Display(Name = "Any others")]
+        public string OtherPreferences { get; set; }
     }
 
     public class ResetPasswordViewModel
