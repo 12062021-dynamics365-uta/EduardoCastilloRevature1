@@ -18,16 +18,21 @@ namespace MVC_Pet_Store.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        private ApplicationDbContext _context;
 
         public AccountController()
         {
+            _context = new ApplicationDbContext();
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
             SignInManager = signInManager;
+            _context = new ApplicationDbContext();
         }
+
+       
 
         public ApplicationSignInManager SignInManager
         {
@@ -140,7 +145,17 @@ namespace MVC_Pet_Store.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            return View();
+            var genders = _context.Genders.ToList();
+            var colors = _context.Colors.ToList();
+            var petTypes = _context.PetTypes.ToList();
+            var model = new RegisterViewModel
+            {
+                genders = genders,
+                colors = colors,
+                petTypes = petTypes
+            };
+
+            return View(model);
         }
 
         //
@@ -154,6 +169,10 @@ namespace MVC_Pet_Store.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+
+               
+
+
                 if (result.Succeeded)
                 {
                     

@@ -22,6 +22,8 @@ namespace MVC_Pet_Store.Models
         public Color DesiredColor { get; set; }
         public byte DesiredColorId { get; set; }
         public Gender DesiredGender { get; set; }
+
+        [Display(Name = "Desired gender")]
         public byte DesiredGenderId { get; set; }
         public PetType DesiredPetType { get; set; }
         public byte DesiredPetTypeId { get; set; }

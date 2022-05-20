@@ -30,62 +30,56 @@
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.PhoneNumber, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.applicationUser.PhoneNumber, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.PasswordFor(m => m.PhoneNumber, new { @class = "form-control" })
+            @Html.PasswordFor(m => m.applicationUser.PhoneNumber, new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.applicationUser.FirstName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.PasswordFor(m => m.FirstName, new { @class = "form-control" })
+            @Html.PasswordFor(m => m.applicationUser.FirstName, new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.applicationUser.LastName, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.PasswordFor(m => m.LastName, new { @class = "form-control" })
+            @Html.PasswordFor(m => m.applicationUser.LastName, new { @class = "form-control" })
         </div>
     </div>
+
 
     <h4>Pet preferences:</h4>
+
     <div class="form-group">
-        @Html.LabelFor(m => m.DesiredColor, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.applicationUser.DesiredAge, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.PasswordFor(m => m.DesiredColor, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.DesiredAge, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.DesiredAge, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.DesiredGender, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.DesiredGender, new { @class = "form-control" })
+            @Html.PasswordFor(m => m.applicationUser.DesiredAge, new { @class = "form-control" })
         </div>
     </div>
 
-
     <div class="form-group">
-        @Html.LabelFor(m => m.DesiredPetType, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.DesiredPetType, new { @class = "form-control" })
-        </div>
+        @Html.LabelFor(m => m.applicationUser.DesiredPetTypeId, new { @class = "col-md-2 control-label" })
+        @Html.DropDownListFor(m => m.applicationUser.DesiredPetTypeId, new SelectList(Model.petTypes, "Id", "Type"), "", new { @class = "DropDn form-control" })
+        @Html.ValidationMessageFor(m => m.applicationUser.DesiredPetTypeId)
     </div>
 
-    @*<div class="form-group">
-        @Html.LabelFor(m => m.DesiredPetTypeId)
-        @Html.DropDownListFor(m => m.DesiredPetTypeId, new SelectList(Model.DesiredPetType, "Id", "Name"), "", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.DesiredPetTypeId)
-    </div>*@
+    <div class="form-group">
+        @Html.LabelFor(m => m.applicationUser.DesiredColorId, new { @class = "col-md-2 control-label" })
+        @Html.DropDownListFor(m => m.applicationUser.DesiredColorId, new SelectList(Model.colors, "Id", "ColorName"), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.applicationUser.DesiredColorId)
+    </div>
 
     <div class="form-group">
-        @Html.LabelFor(m => m.OtherPreferences, new { @class = "col-md-2 control-label" })
+        @Html.LabelFor(m => m.applicationUser.DesiredGenderId, new { @class = "col-md-2 control-label" })
+        @Html.DropDownListFor(m => m.applicationUser.DesiredGenderId, new SelectList(Model.genders, "Id", "GenderName"), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.applicationUser.DesiredGenderId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.applicationUser.OtherPreferences, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.PasswordFor(m => m.OtherPreferences, new { @class = "form-control" })
+            @Html.PasswordFor(m => m.applicationUser.OtherPreferences, new { @class = "form-control" })
         </div>
     </div>
 
@@ -102,3 +96,5 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+
+
