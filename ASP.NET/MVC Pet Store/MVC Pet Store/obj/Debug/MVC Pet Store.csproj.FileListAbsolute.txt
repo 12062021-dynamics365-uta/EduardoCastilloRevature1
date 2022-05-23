@@ -124,3 +124,4 @@ E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Deb
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.CopyComplete
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.dll
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.pdb
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddAdoptionApplication.resources

@@ -11,6 +11,9 @@
     <h4>Create a new account.</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+
     <div class="form-group">
         @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
@@ -49,7 +52,9 @@
     </div>
 
 
-    <h4>Pet preferences:</h4>
+    <br />
+    <h4 style="text-align:left;">Pet preferences:</h4>
+    <br/>
 
     <div class="form-group">
         @Html.LabelFor(m => m.applicationUser.DesiredAge, new { @class = "col-md-2 control-label" })
@@ -60,41 +65,47 @@
 
     <div class="form-group">
         @Html.LabelFor(m => m.applicationUser.DesiredPetTypeId, new { @class = "col-md-2 control-label" })
-        @Html.DropDownListFor(m => m.applicationUser.DesiredPetTypeId, new SelectList(Model.petTypes, "Id", "Type"), "", new { @class = "DropDn form-control" })
-        @Html.ValidationMessageFor(m => m.applicationUser.DesiredPetTypeId)
-    </div>
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.applicationUser.DesiredPetTypeId, new SelectList(Model.petTypes, "Id", "Type"), "", new { @class = "DropDn form-control" })
+        </div>
+            @Html.ValidationMessageFor(m => m.applicationUser.DesiredPetTypeId)
+        </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.applicationUser.DesiredColorId, new { @class = "col-md-2 control-label" })
-        @Html.DropDownListFor(m => m.applicationUser.DesiredColorId, new SelectList(Model.colors, "Id", "ColorName"), "", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.applicationUser.DesiredColorId)
-    </div>
+        <div class="col-md-10">
+            @Html.DropDownListFor(m => m.applicationUser.DesiredColorId, new SelectList(Model.colors, "Id", "ColorName"), "", new { @class = "form-control" })
+        </div>          
+            @Html.ValidationMessageFor(m => m.applicationUser.DesiredColorId)
+        </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.applicationUser.DesiredGenderId, new { @class = "col-md-2 control-label" })
-        @Html.DropDownListFor(m => m.applicationUser.DesiredGenderId, new SelectList(Model.genders, "Id", "GenderName"), "", new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.applicationUser.DesiredGenderId)
-    </div>
-
-    <div class="form-group">
-        @Html.LabelFor(m => m.applicationUser.OtherPreferences, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
-            @Html.PasswordFor(m => m.applicationUser.OtherPreferences, new { @class = "form-control" })
+            @Html.DropDownListFor(m => m.applicationUser.DesiredGenderId, new SelectList(Model.genders, "Id", "GenderName"), "", new { @class = "form-control" })
+        </div>         
+            @Html.ValidationMessageFor(m => m.applicationUser.DesiredGenderId)
         </div>
-    </div>
 
-
-
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
+        <div class="form-group">
+            @Html.LabelFor(m => m.applicationUser.OtherPreferences, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.applicationUser.OtherPreferences, new { @class = "form-control" })
+            </div>
         </div>
-    </div>
-}
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Register" />
+            </div>
+        </div>
+        }
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
 
 

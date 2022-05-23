@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace MVC_Pet_Store.Models
 {
@@ -29,6 +30,9 @@ namespace MVC_Pet_Store.Models
         public byte DesiredPetTypeId { get; set; }
         public string OtherPreferences { get; set; }
 
+        [Display(Name = "Applications submitted")]
+        public  List<AdoptionApplication> applications { get; set; }
+
 
 
 
@@ -44,7 +48,6 @@ namespace MVC_Pet_Store.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<Store> Stores { get; set; }
         public DbSet<Pet> Pets { get; set; }
         public DbSet<Color> Colors { get; set; }
         public DbSet<Gender> Genders { get; set; }
