@@ -1,11 +1,12 @@
 ﻿@model MVC_Pet_Store.Models.ApplicationUser
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>@Model.FullName</h2>
+
 
 <h3>Personal information</h3>
 <ul>
@@ -15,12 +16,14 @@
     <li>Phone Number: @Model.PhoneNumber</li>
 </ul>
 <br />
-<h3>Pet preferences</h3>
+
+
+<h3>Pet preferences:</h3>
 <ul>
-    <li>Type: @Model.DesiredPetType.Type</li>
     <li>Age: @Model.DesiredAge</li>
-    <li>Color: @Model.DesiredColor.ColorName</li>
-    <li>Gender: @Model.DesiredGender.GenderName</li>
+    <li>Color: @Model.Color.ColorName</li>
+    <li>Gender: @Model.Gender.GenderName</li>
+    <li>Type: @Model.PetType.Type</li>
     <li>Others: @Model.OtherPreferences</li>
 </ul>
 

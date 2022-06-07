@@ -20,18 +20,18 @@ namespace MVC_Pet_Store.Models
 
         //Pet preferences
         public int? DesiredAge { get; set; }
-        public Color DesiredColor { get; set; }
-        public byte DesiredColorId { get; set; }
-        public Gender DesiredGender { get; set; }
+        public Color Color { get; set; }
+        public byte ColorId { get; set; }
+        public Gender Gender { get; set; }
 
         [Display(Name = "Desired gender")]
-        public byte DesiredGenderId { get; set; }
-        public PetType DesiredPetType { get; set; }
-        public byte DesiredPetTypeId { get; set; }
+        public byte GenderId { get; set; }
+        public PetType PetType { get; set; }
+        public byte PetTypeId { get; set; }
         public string OtherPreferences { get; set; }
 
         [Display(Name = "Applications submitted")]
-        public  List<AdoptionApplication> applications { get; set; }
+        public List<AdoptionApplication> applications { get; set; }
 
 
 
@@ -52,6 +52,7 @@ namespace MVC_Pet_Store.Models
         public DbSet<Color> Colors { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<PetType> PetTypes { get; set; }
+        public DbSet<AdoptionApplication> AdoptionApplications { get; set; }
 
 
         public ApplicationDbContext()

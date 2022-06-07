@@ -248,6 +248,74 @@
     <Compile Include="Migrations\202205222327078_AddAdoptionApplication.designer.cs">
       <DependentUpon>202205222327078_AddAdoptionApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205231109184_update.cs" />
+    <Compile Include="Migrations\202205231109184_update.designer.cs">
+      <DependentUpon>202205231109184_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231805541_AddPet1.cs" />
+    <Compile Include="Migrations\202205231805541_AddPet1.designer.cs">
+      <DependentUpon>202205231805541_AddPet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231810138_AddPet2.cs" />
+    <Compile Include="Migrations\202205231810138_AddPet2.designer.cs">
+      <DependentUpon>202205231810138_AddPet2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231814317_AddPet3.cs" />
+    <Compile Include="Migrations\202205231814317_AddPet3.designer.cs">
+      <DependentUpon>202205231814317_AddPet3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231821360_updateUsers.cs" />
+    <Compile Include="Migrations\202205231821360_updateUsers.designer.cs">
+      <DependentUpon>202205231821360_updateUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231827005_updateUsers1.cs" />
+    <Compile Include="Migrations\202205231827005_updateUsers1.designer.cs">
+      <DependentUpon>202205231827005_updateUsers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231902423_updateUsers2.cs" />
+    <Compile Include="Migrations\202205231902423_updateUsers2.designer.cs">
+      <DependentUpon>202205231902423_updateUsers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231911462_updateUsers3.cs" />
+    <Compile Include="Migrations\202205231911462_updateUsers3.designer.cs">
+      <DependentUpon>202205231911462_updateUsers3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231914346_updateUsers4.cs" />
+    <Compile Include="Migrations\202205231914346_updateUsers4.designer.cs">
+      <DependentUpon>202205231914346_updateUsers4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231924034_updateUsers5.cs" />
+    <Compile Include="Migrations\202205231924034_updateUsers5.designer.cs">
+      <DependentUpon>202205231924034_updateUsers5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231929508_updateUsers6.cs" />
+    <Compile Include="Migrations\202205231929508_updateUsers6.designer.cs">
+      <DependentUpon>202205231929508_updateUsers6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231938458_updateUsers7.cs" />
+    <Compile Include="Migrations\202205231938458_updateUsers7.designer.cs">
+      <DependentUpon>202205231938458_updateUsers7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205231958158_usersUpdate.cs" />
+    <Compile Include="Migrations\202205231958158_usersUpdate.designer.cs">
+      <DependentUpon>202205231958158_usersUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205232029295_stillUsers.cs" />
+    <Compile Include="Migrations\202205232029295_stillUsers.designer.cs">
+      <DependentUpon>202205232029295_stillUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205232033493_stillUsers1.cs" />
+    <Compile Include="Migrations\202205232033493_stillUsers1.designer.cs">
+      <DependentUpon>202205232033493_stillUsers1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205232034355_stillUsers2.cs" />
+    <Compile Include="Migrations\202205232034355_stillUsers2.designer.cs">
+      <DependentUpon>202205232034355_stillUsers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205232037484_stillUsersthing.cs" />
+    <Compile Include="Migrations\202205232037484_stillUsersthing.designer.cs">
+      <DependentUpon>202205232037484_stillUsersthing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdoptionApplication.cs" />
@@ -314,12 +382,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Pets\List.cshtml" />
+    <Content Include="Views\Pets\ListForAdm.cshtml" />
     <Content Include="Views\Pets\Details.cshtml" />
-    <Content Include="Views\Users\Index.cshtml" />
-    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\UserHome.cshtml" />
     <Content Include="Views\Users\UsersAdm.cshtml" />
-    <Content Include="Views\Pets\ReadOnlyList.cshtml" />
+    <Content Include="Views\Pets\ListForUsers.cshtml" />
+    <Content Include="Views\Pets\ApplicationSubmitted.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -388,6 +456,57 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205222327078_AddAdoptionApplication.resx">
       <DependentUpon>202205222327078_AddAdoptionApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231109184_update.resx">
+      <DependentUpon>202205231109184_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231805541_AddPet1.resx">
+      <DependentUpon>202205231805541_AddPet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231810138_AddPet2.resx">
+      <DependentUpon>202205231810138_AddPet2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231814317_AddPet3.resx">
+      <DependentUpon>202205231814317_AddPet3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231821360_updateUsers.resx">
+      <DependentUpon>202205231821360_updateUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231827005_updateUsers1.resx">
+      <DependentUpon>202205231827005_updateUsers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231902423_updateUsers2.resx">
+      <DependentUpon>202205231902423_updateUsers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231911462_updateUsers3.resx">
+      <DependentUpon>202205231911462_updateUsers3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231914346_updateUsers4.resx">
+      <DependentUpon>202205231914346_updateUsers4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231924034_updateUsers5.resx">
+      <DependentUpon>202205231924034_updateUsers5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231929508_updateUsers6.resx">
+      <DependentUpon>202205231929508_updateUsers6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231938458_updateUsers7.resx">
+      <DependentUpon>202205231938458_updateUsers7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205231958158_usersUpdate.resx">
+      <DependentUpon>202205231958158_usersUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205232029295_stillUsers.resx">
+      <DependentUpon>202205232029295_stillUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205232033493_stillUsers1.resx">
+      <DependentUpon>202205232033493_stillUsers1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205232034355_stillUsers2.resx">
+      <DependentUpon>202205232034355_stillUsers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205232037484_stillUsersthing.resx">
+      <DependentUpon>202205232037484_stillUsersthing.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

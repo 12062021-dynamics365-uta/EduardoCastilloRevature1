@@ -81,7 +81,20 @@ namespace MVC_Pet_Store.Models
         public string ConfirmPassword { get; set; }
 
 
-       
+        [Display(Name = "Gender")]
+        [Required]
+        public byte? GenderId { get; set; }
+
+        [Display(Name = "Color")]
+        [Required]
+        public byte? ColorId { get; set; }
+
+        [Display(Name = "Type")]
+        [Required]
+        public byte? PetTypeId { get; set; }
+
+
+
         public IEnumerable<Gender> genders { get; set; }
 
         public IEnumerable<Color> colors { get; set; }

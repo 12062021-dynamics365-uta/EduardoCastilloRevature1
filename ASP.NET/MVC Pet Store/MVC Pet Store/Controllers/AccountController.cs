@@ -167,7 +167,23 @@ namespace MVC_Pet_Store.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser 
+                { 
+                    UserName = model.Email, 
+                    Email = model.Email,
+                    PhoneNumber = model.applicationUser.PhoneNumber,
+                    FirstName = model.applicationUser.FirstName,
+                    LastName = model.applicationUser.LastName,
+                    DesiredAge = model.applicationUser.DesiredAge,
+                    Color = model.applicationUser.Color,
+                    ColorId = model.applicationUser.ColorId,
+                    Gender = model.applicationUser.Gender,
+                    GenderId = model.applicationUser.GenderId,
+                    PetType = model.applicationUser.PetType,
+                    PetTypeId = model.applicationUser.PetTypeId,
+                    OtherPreferences = model.applicationUser.OtherPreferences
+
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
                

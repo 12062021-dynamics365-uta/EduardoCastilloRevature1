@@ -119,9 +119,26 @@ E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Deb
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.SeedUsers.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.DeleteAdministrators.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.MovingUserToApplicationUser.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddAdoptionApplication.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.update.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddPet1.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddPet2.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddPet3.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers1.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers2.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers3.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers4.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers5.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers6.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.updateUsers7.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.usersUpdate.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.stillUsers.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.stillUsers1.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.stillUsers2.resources
+E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.stillUsersthing.resources
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.GenerateResource.cache
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.CoreCompileInputs.cache
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.csproj.CopyComplete
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.dll
 E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC Pet Store.pdb
-E:\Revature\EduardoCastilloRevature1\ASP.NET\MVC Pet Store\MVC Pet Store\obj\Debug\MVC_Pet_Store.Migrations.AddAdoptionApplication.resources
