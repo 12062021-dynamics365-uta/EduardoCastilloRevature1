@@ -44,4 +44,9 @@ public class OutputTools {
 
         System.out.println(text);
     }
+
+    public static void SayResult(String result)
+    {
+        System.out.println(result);
+    }
 }

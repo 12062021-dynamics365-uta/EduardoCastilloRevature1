@@ -23,14 +23,22 @@ public class Validator {
     }
 
     public static Boolean ValidateSumOfLength(int[][] lists, int K) {
-        int total = 0;
-        for (int i = 0; i < K; i++) {
-            total += lists[i].length;
-        }
+        
+        int total = SumOfLength(lists, K);
 
         if (total > 104)
             return false;
         else
             return true;
+    }
+
+    public static int SumOfLength(int[][] lists, int K)
+    {
+        int total = 0;
+        for (int i = 0; i < K; i++) {
+            if(lists[i] != null)
+            total += lists[i].length;
+        }
+        return total;
     }
 }
