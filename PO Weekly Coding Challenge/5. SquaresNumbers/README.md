@@ -1,18 +1,14 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# Squares Numbers
+Watson likes to challenge Sherlock's math ability. He will provide a starting and ending value describing a range of integers. Sherlock must determine the number of square integers within that range, inclusive of the endpoints (note that a square integer is an integer which is the square of an integer,
+e.g. 1, 4, 9, 16, 25, 36, 49).  
+For example, the range is a=24 and b=49, inclusive.   
+There are three square integers in the range: 25, 36 and 49.  
+Complete the squares function that returns an integer representing the number of square integers in the inclusive range from a to b.
+  
+<b>Examples  </b>  
+<code>squares(3, 9) ➞ 2  
+squares(17, 24) ➞ 0  
+squares(1, 1000000000) ➞ 31622  
+</code>
+<b>Notes</b>  
+Your solution must solve each problem in 1 second or less.
